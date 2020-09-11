@@ -1,0 +1,128 @@
+*{
+    font-family: "Roboto";
+}
+.HeaderLogin{
+height: 70px;
+border-bottom: 1px solid black;
+}
+.containerHeader{
+    
+    height: 100%;
+    padding: 0% ; 
+}
+.rowHeader{
+    height: 100%;
+    align-items: center;
+    
+}
+.headerTitle{  
+    margin-top:10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+.headerIcon{   
+    border-radius: 50%;  
+}
+.headerButton{
+    width: 170px;
+    height: 50px;
+    background: linear-gradient(90deg, #CB846F 0%, #A45E4A 100%);
+    border-radius: 6px;
+    border:none;
+}
+.containerContent{
+    padding: 0%;
+}
+.contentTitle{
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 33px;
+}
+.containerContent{
+    margin-top: 60px;
+}
+.leftContent{
+    width:100%;
+    height:437px;
+}
+.rightContent{
+    width:100%;
+}
+.titlerightContent{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 33px;
+}
+.homestaypng{
+    border-radius: 15px 15px 0px 0px;
+}
+.homestayName{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top:16px;
+    margin-bottom: 8px;
+}
+.collapseButton{
+    margin-bottom: 5px;
+    width: 100% !important;
+    text-align: left;
+    background-color: #D1AB9A;
+}
+.rightlabel{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+}
+.rightTextBox{
+    width: 100%;
+    height: 50px;
+    margin-top:22px;
+    margin-bottom: 30px;
+    display: block;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left:21px;
+    padding-top:14px;
+}
+
+
+#descriptionText{
+    height: 239px;
+}
+#noteText{
+    height: 239px;
+}
+textarea {
+    width: 100%;   
+    height: 239px;
+    
+    box-sizing: border-box;   
+    resize: none;
+}
+.priceunit{   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    margin-top:34px;
+    margin-bottom: 30px;
+}
+.utilityBox{
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-top: 30px;
+}

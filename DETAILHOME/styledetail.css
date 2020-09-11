@@ -19,13 +19,14 @@ nav{
     height: 90px;
     filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.1));
     text-align: center;
+    z-index: 10;
 }
 nav a{
     position: relative;
     width: 75px;
     height: 21px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 1000;
     font-size: 18px;
     line-height: 21px;
     margin-right: 40px;
@@ -50,6 +51,7 @@ section#policy:hover ~ nav a[href="#policy"]
     /* text-decoration: underline #A45E4A; */
     border-bottom: 4px solid #A45E4A;
     padding-bottom: 31px;
+    text-decoration: none;
 }
 .glideDetailHome{
     height: 479px;
@@ -87,12 +89,11 @@ section#policy:hover ~ nav a[href="#policy"]
 }
 .containerCard{
     width: 370px;
-    height: 6000px;
+    height: 2000px;
     margin-top: 60px;
     position: sticky;
 }
 .cardPrice{
-    
     position: sticky;
     top: 120px;
     width: 370px;
@@ -100,17 +101,96 @@ section#policy:hover ~ nav a[href="#policy"]
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 15px;
+    margin-left: 30px;
 }
 .mainContaint h2{
-    font-weight: 500;
+    font-weight: 1000;
     font-size: 28px;
     line-height: 33px;
+    margin-bottom: 20px;
 }
-input[type=text]{
+input[type=date],input[type=number],.bookRoom{
     width: 310px;
     height: 50px;
     border-radius: 15px;
     border: 1px solid #999999;
     margin-bottom: 15px;
     margin-left: 30px;
+}
+.cardPrice p{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-weight: 1000;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+    color: #333333;
+}
+.bookRoom{
+    background: linear-gradient(90deg, #CF8874 0%, #A45E4A 100%);
+    color: white;
+}
+#convenient{
+    margin-top: -100px;
+    height: auto;
+}
+#utilities,#price,#rating,#policy{
+    margin-top: 60px;
+    height: auto;
+}
+.rowconvenient{
+    height: 240px;
+    width: 97%;
+}
+.colContentconvenient{
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius:0px 15px 15px 0px;
+}
+.list-group{
+    border-radius:15px 0px 0px 15px !important;  
+}
+.list-group-item{
+    width: 236px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    border: 1px solid #000000 !important;
+}
+.list-group > .active{
+    background-color: white !important;
+    color: #A45E4A !important;
+    padding-bottom: 0 !important;
+    border-bottom: 2px solid !important;
+}
+.priceDetail > div{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 97%;
+    height: 50px;
+    align-items: center;
+}
+.priceDayOdd,.timeCheckIn{
+    background: #D1AB9A;
+}
+.timeCheck > div{
+    height: 50px;
+    width: 97%;
+}
+.mainContaint > h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #333333;
+    margin-bottom: 21px;
+}
+.timeCheckIn,.timeCheckOut{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.glideSimilarHome{
+    top: 56px;
 }

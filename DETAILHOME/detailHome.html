@@ -11,7 +11,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" rel="stylesheet" />
     <script src="./detailjs.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Chi tiết HomeStay</title>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+        <title>Chi tiết HomeStay</title>
 </head>
 
 <body>
@@ -19,17 +24,19 @@
     <section id="overview">
         <div class="glide glideDetailHome">
             <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides">
-                <li class="glide__slide"><img src="./img/imgDetail1.png" alt=""></li>
-                <li class="glide__slide"><img src="./img/imgDetail1.png" alt=""></li>
-                <li class="glide__slide"><img src="./img/imgDetail1.png" alt=""></li>
-              </ul>
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="./img/imgDetail1.png" alt=""></li>
+                    <li class="glide__slide"><img src="./img/imgDetail1.png" alt=""></li>
+                    <li class="glide__slide"><img src="./img/imgDetail1.png" alt=""></li>
+                </ul>
             </div>
             <div class="glide__arrows arrowDetail" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-arrow-left"></i></button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-arrow-right"></i></button>
-              </div>
-          </div>
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                        class="fa fa-arrow-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                        class="fa fa-arrow-right"></i></button>
+            </div>
+        </div>
         <div class="contentOverview">
             <div class="container">
                 <div class="row">
@@ -41,26 +48,32 @@
                         <p>
                             Căn studio xinh xắn nằm trong lòng phố cổ. <br>
 
-Quý khách sẽ được tận hưởng 01 không gian xanh và tình tế giữa lòng Hà Nội cổ. <br>
+                            Quý khách sẽ được tận hưởng 01 không gian xanh và tình tế giữa lòng Hà Nội cổ. <br>
 
-Có thể sải bước đi bộ tới các địa điểm nổi tiếng: Hồ Gươm, Tháp bút, Đền Ngọc Sơn, nhà thờ Lớn, Nhà hát lớn.... <br>
+                            Có thể sải bước đi bộ tới các địa điểm nổi tiếng: Hồ Gươm, Tháp bút, Đền Ngọc Sơn, nhà thờ
+                            Lớn, Nhà hát lớn.... <br>
 
-Thưởng thức nhiều món ăn và ẩm thực của Hà Thành<br>
+                            Thưởng thức nhiều món ăn và ẩm thực của Hà Thành<br>
 
-Bên cạnh đó, tôi cũng là một người bản địa vô cùng thân thiện và thoải mái. Chính vì vậy đừng ngại ngần mà chia sẻ với chúng tôi những điều bạn đang thắc mắc hoặc những khó khăn bạn gặp phải khi ở đây.<br>
+                            Bên cạnh đó, tôi cũng là một người bản địa vô cùng thân thiện và thoải mái. Chính vì vậy
+                            đừng ngại ngần mà chia sẻ với chúng tôi những điều bạn đang thắc mắc hoặc những khó khăn bạn
+                            gặp phải khi ở đây.<br>
 
-Chúng tôi cũng luôn mong muốn được cùng bạn khám phá nhiều địa điểm tốt đẹp nhất tại đây.<br>
+                            Chúng tôi cũng luôn mong muốn được cùng bạn khám phá nhiều địa điểm tốt đẹp nhất tại
+                            đây.<br>
 
-Vậy còn chần chừ gì nữa ngay bây giờ hãy lên kế hoạch để tận hưởng những khoảnh khắc tuyệt vời cùng nhau.<br>
+                            Vậy còn chần chừ gì nữa ngay bây giờ hãy lên kế hoạch để tận hưởng những khoảnh khắc tuyệt
+                            vời cùng nhau.<br>
                         </p>
                     </div>
                     <div class="col-lg-4">
                         <div class="containerCard">
                             <div class="cardPrice">
                                 <p>598,915đ/đêm</p>
-                                <input type="text">
-                                <input type="text">
-                                <input type="text">
+                                <input type="date" placeholder="Chọn ngày đi">
+                                <input type="date" placeholder="Chọn ngày đi">
+                                <input type="number" placeholder="Số khách">
+                                <button class="bookRoom">Đặt phòng</button>
                             </div>
                         </div>
                     </div>
@@ -73,6 +86,32 @@ Vậy còn chần chừ gì nữa ngay bây giờ hãy lên kế hoạch để t
             <div class="row">
                 <div class="col-lg-8 mainContaint">
                     <h2>Tiện nghi chỗ ở</h2>
+                    <div class="row rowconvenient">
+                        <div class="col-4 colListconvenient">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Tiện ích</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Tiện ích giải trí</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Tiện ích phòng</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Tiện ích gia đình</a>
+                          </div>
+                        </div>
+                        <div class="col-8 colContentconvenient">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et, fugit at perspiciatis iste libero, maiores aspernatur culpa esse magnam nam neque a eaque natus consequatur ipsam suscipit quis illum.
+                            </div>
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                                Soluta nostrum hic veniam doloremque at assumenda velit optio dicta laboriosam? In adipisci maxime libero quasi architecto ut vero iure sunt numquam?
+                            </div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere reiciendis adipisci earum repudiandae natus optio dicta alias odio consectetur, expedita ratione soluta sint possimus ipsa, debitis, quia quos perferendis delectus.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -81,7 +120,33 @@ Vậy còn chần chừ gì nữa ngay bây giờ hãy lên kế hoạch để t
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mainContaint">
-                    <h2>Tiện ích cung quanh</h2>
+                    <h2>Tiện nghi chỗ ở</h2>
+                    <div class="row rowutilities">
+                        <div class="col-4 colListconvenient">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Địa điểm nổi tiếng</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Ẩm thực</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Giải trí</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Y tế</a>
+                          </div>
+                        </div>
+                        <div class="col-8 colContentconvenient">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                                Loremr sit amet consectetur adipisicing elit. Voluptate et, fugit at perspiciatis iste libero, maiores aspernatur culpa esse magnam nam neque a eaque natus consequatur ipsam suscipit quis illum.
+                            </div>
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                                Soluta nostrum hic veniam doloremque at assumenda velit optio dicta laboriosam? In adipisci maxime libero quasi architecto ut vero iure sunt numquam?
+                            </div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere reiciendis adipisci earum repudiandae natus optio dicta alias odio consectetur, expedita ratione soluta sint possimus ipsa, debitis, quia quos perferendis delectus.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -91,6 +156,32 @@ Vậy còn chần chừ gì nữa ngay bây giờ hãy lên kế hoạch để t
             <div class="row">
                 <div class="col-lg-8 mainContaint">
                     <h2>Giá phòng</h2>
+                    <div class="priceDetail">
+                        <div class="priceDay priceDayOdd">
+                            <p>Thứ hai - Thứ năm</p>
+                            <p>900,000đ</p>
+                        </div>
+                        <div class="priceDay">
+                            <p>Thứ sáu - Chủ nhật</p>
+                            <p>900,000đ</p>
+                        </div>
+                        <div class="priceDay priceDayOdd">
+                            <p>Thuê thao tháng</p>
+                            <p>20,000,000đ</p>
+                        </div>
+                        <div class="priceDay">
+                            <p>Số đêm tối thiểu</p>
+                            <p>1</p>
+                        </div>
+                        <div class="priceDay priceDayOdd">
+                            <p>Số đêm tối đa</p>
+                            <p>1000</p>
+                        </div>
+                        <div class="priceDay">
+                            <p>Phí khách tăng thêm</p>
+                            <p>1,200,000đ(Sau 2 khách)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,8 +200,74 @@ Vậy còn chần chừ gì nữa ngay bây giờ hãy lên kế hoạch để t
             <div class="row">
                 <div class="col-lg-8 mainContaint">
                     <h2>Nội quy và chính sách</h2>
+                    <h3>Chính sách hủy phòng</h3>
+                    <p>Trung bình: Miễn phí hủy phòng trong vòng 48h sau khi đặt phòng thành công và trước 5 ngày so với thời gian check-in. Sau đó, hủy phòng trước 5 ngày so với thời gian check-in, được hoàn lại 100% tổng số tiền đã trả (trừ phí dịch vụ).</p>
+                    <h3>Lưu ý đặc biệt</h3>
+                    <p>Check in 14h - check out 12h
+                        Nằm trong khu dân cư phố cổ nên yêu cầu giữ gìn không gian chung và không làm ồn.</p>
+                    <h3>Thời gian nhận phòng</h3>
+                    <div class="timeCheck">
+                        <div class="timeCheckIn">
+                            <p>Nhận phòng</p>
+                            <p>14:00 pm</p>
+                        </div>
+                        <div class="timeCheckOut">
+                            <p>Trả phòng</p>
+                            <p>12:00 pm</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="similar">
+        <div class="container">
+            
+                    <h2>Chỗ ở tương tự</h2>
+                    <div class="glide glideSimilarHome">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./img/similarStay1.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Căn hộ Studio</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                      </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./img/similarStay1.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Căn hộ Studio</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                      </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./img/similarStay1.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Căn hộ Studio</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                      </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glide__arrows arrowDetail" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                    class="fa fa-arrow-left"></i></button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                    class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                
+            
         </div>
     </section>
     <nav>
@@ -122,6 +279,14 @@ Vậy còn chần chừ gì nữa ngay bây giờ hãy lên kế hoạch để t
         <a href="#policy">Chính sách</a>
         <a href="#">Về đầu trang</a>
     </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+        integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+        crossorigin="anonymous"></script>
+        <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>

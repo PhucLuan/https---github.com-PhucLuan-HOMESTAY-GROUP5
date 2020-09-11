@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="host2css.css">
+    <link rel="stylesheet" href="checkboxCustom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title >Host2</title>
+</head>
+<header class="HeaderLogin">
+    <div class="container containerHeader">
+        <div class="row rowHeader">
+            <div class="col-lg-2 ">               
+                <div>
+                <img src="img/logoST.png" alt ="">
+                </div>
+            </div>
+            <div class="col-lg-2 "><p class="headerTitle">Chỗ nghỉ</p> </div> 
+            <div class="col-lg-2 offset-lg-5"> 
+                <div >
+                <button class="headerButton">Tạo chỗ nghỉ mới</button>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div >
+                    <img class="headerIcon" src="img/image 13.png" alt ="">
+                </div>
+            </div>       
+        </div>
+    </div>
+
+    
+</header>
+<h1 class="contentTitle container">Tạo chỗ nghỉ mới</h1>
+<div class="container containerContent">
+    <div class="row">
+        <section class="col-lg-4 leftContent">
+            <div>
+                <img src="img/hinh gai dep.png" alt ="" class="homestaypng">
+            </div>
+            <h1 class="homestayName">Hoài Thương</h1>
+            <p class="rightlabel">nghiadeptrai@gmail.com</p>
+            <hr style="border:1px solid black">
+
+        </section>
+        <section class="col-lg-8 rightContent" >
+            <h1 class="titlerightContent">Tạo chỗ nghỉ</h1>
+            <hr style="border :1px solid black">
+                                                     
+                
+                  <form action="/action_page.php">
+                    <button class="btn btn-primary collapseButton" type="button" data-toggle="collapse" data-target="#collapseDescription" aria-expanded="true" aria-controls="collapseDescription">
+                      Mô tả
+                    </button>             
+                  <div class="collapse" id="collapseDescription">
+                    <div class="card card-body">
+                    <label for="hsname" class="rightlabel" >Tên chỗ nghỉ của bạn:</label>
+                    <input class="rightTextBox" placeholder="Nhập tên chỗ nghỉ" type="text" id="hsname" name="hsname">
+                    <label for="hsAddress" class="rightlabel">Địa chỉ:</label>
+                    <input class="rightTextBox" placeholder="Nhập địa chỉ" type="text" id="hsAddress" name="hsAddress">
+                    <label for="hsDescription" class="rightlabel">Mô tả:</label>
+                    <textarea class="rightTextBox" id="descriptionText" placeholder="Mô tả chỗ nghỉ của bạn" type="text" id="hsDescription" name="hsDescription"></textarea>  
+                    <label for="hsNote" class="rightlabel">Mô tả:</label>
+                    <textarea class="rightTextBox" id="noteText" placeholder="Những lưu ý cho khách khi muốn ở chỗ nghỉ của bạn" type="text" id="hsNote" name="hsNote"></textarea>
+                    </div>
+                  </div>   
+                <button class="btn btn-primary collapseButton" type="button" data-toggle="collapse" data-target="#collapseInfo" aria-expanded="true" aria-controls="collapseInfo">
+                  Thông tin cơ bản
+                </button>             
+              <div class="collapse" id="collapseInfo">
+                <div class="card card-body">
+                <label for="hstype" class="rightlabel" >Chỗ nghỉ của bạn là</label>
+                <select class="rightTextBox" id="hstype" name="hstype">
+                    <option value="" disabled selected>Chọn loại chỗ nghỉ</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option> 
+                </select>
+                <label for="roomtype" class="rightlabel" >Loại phòng</label>
+                <select class="rightTextBox" id="roomtype" name="roomtype">
+                    <option value="" disabled selected>Chọn loại phòng</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option> 
+                </select>
+                <label for="hsArea" class="rightlabel">Diện tích chỗ ở (m2)</label>
+                <input class="rightTextBox"  type="number" id="hsArea" name="hsArea">
+                <label for="maxGuessNum" class="rightlabel">Số khách tối đa (bao gồm người lớn và trẻ em):</label>
+                <input class="rightTextBox"  type="number" id="maxGuessNum" name="maxGuessNum">
+                <label for="maxBaby" class="rightlabel">Trẻ sơ sinh tối đa:</label>
+                <input class="rightTextBox"  type="number" id="maxBaby" name="maxBaby">
+              </div>
+            </div>
+            <button class="btn btn-primary collapseButton" type="button" data-toggle="collapse" data-target="#collapseRoomBed" aria-expanded="true" aria-controls="collapseRoomBed">
+              Phòng và giường
+            </button> 
+            <div class="collapse" id="collapseRoomBed">
+              <div class="card card-body">            
+              <label for="bedroom" class="rightlabel">Số lượng phòng ngủ</label>
+              <input class="rightTextBox"  type="number" id="bedroom" name="bedroom">
+              <label for="bedNum" class="rightlabel">Số lượng giường:</label>
+              <input class="rightTextBox"  type="number" id="bedNum" name="bedNum">
+              <label for="bathroom" class="rightlabel">Số lượng phòng tắm</label>
+              <input class="rightTextBox"  type="number" id="bathroom" name="bathroom">
+              
+            </div>
+          </div>
+          <button class="btn btn-primary collapseButton" type="button" data-toggle="collapse" data-target="#collapsePriceandTime" aria-expanded="true" aria-controls="collapsePriceandTime">
+            Giá và thời gian
+          </button> 
+          <div class="collapse" id="collapsePriceandTime">
+            <div class="card card-body">            
+            <label for="priceOverNight " class="rightlabel">Giá theo đêm (giá bao gồm 3% phí sử dụng nền tảng)</label>
+            <div class="row">
+            <input class="rightTextBox col-lg-6"  type="number" id="priceOverNight" name="priceOverNight">
+            <p class="priceunit col-lg-2" >VNĐ/ đêm</p>
+          </div>
+            <label for="priceWeekend" class="rightlabel">Giá cuối tuần (bao gồm thứ 6, thứ 7 và Chủ Nhật):</label>
+            <div class="row">
+            <input class="rightTextBox col-lg-6"  type="number" id="priceWeekend" name="priceWeekend">
+            <p class="priceunit col-lg-2" >VNĐ/ đêm</p>
+          </div>
+            <label for="extendedPrice" class="rightlabel">Phí khách tăng thêm</label>
+            <div class="row">           
+            <input class="rightTextBox col-lg-6"  type="number" id="extendedPrice" name="extendedPrice">
+            <p class="priceunit col-lg-2" >%</p>
+        </div>
+            <label for="monthlyPrice" class="rightlabel">Thuê theo tháng</label>
+            <div class="row">
+            <input class="rightTextBox col-lg-6"  type="number" id="monthlyPrice" name="monthlyPrice">
+            <p class="priceunit col-lg-2" >VNĐ/ đêm</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <label for="minNight" class="rightlabel">Số đêm tối thiểu</label>
+              <input class="rightTextBox"  type="number" id="minNight" name="minNight">
+              <label for="checkintimeAvailable" class="rightlabel">Thời gian nhận phòng</label>
+              <input class="rightTextBox"  type="time" id="checkintimeAvailable" name="checkintimeAvailable">
+            </div>
+            <div class="col-lg-6">
+              <label for="maxNight" class="rightlabel">Số đêm tối đa</label>
+              <input class="rightTextBox"  type="number" id="maxNight" name="maxNight">
+              <label for="checkouttimeAvailable" class="rightlabel">Thời gian trả phòng</label>
+              <input class="rightTextBox"  type="time" id="checkouttimeAvailable" name="checkouttimeAvailable">
+            </div>
+          </div>
+          </div>
+          </div>
+
+          <button class="btn btn-primary collapseButton" type="button" data-toggle="collapse" data-target="#collapseUtility" aria-expanded="true" aria-controls="collapseUtility">
+            Tiện ích
+          </button> 
+          <div class="collapse" id="collapseUtility">
+            <div class="card card-body">           
+              <p class="rightlabel">Tiện nghi chỗ ở</p>
+              <div class="utilityBox">
+              <P class="rightlabel">Tiện ích gia đình</P>
+              <div class="row">
+                <div class="col-lg-4">
+                <label class="customCheckbox">Phù hợp với trẻ nhỏ
+                  <input type="checkbox" >
+                  <span class="checkmark"></span>
+                </div>
+                <div class="col-lg-4">
+                  <label class="customCheckbox">Đệm bổ sung
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                </div>
+                  <div class="col-lg-4">
+                    <label class="customCheckbox">Không hút thuốc
+                      <input type="checkbox" >
+                      <span class="checkmark"></span>
+                  </div>                     
+                </label>
+              </div>
+                <P class="rightlabel">Tiện ích phòng</P>
+              <div class="row">
+                <div class="col-lg-4">
+                <label class="customCheckbox">Ban công
+                  <input type="checkbox" >
+                  <span class="checkmark"></span>
+                </div>
+                <div class="col-lg-4">
+                  <label class="customCheckbox">Cửa sổ
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                </div>
+                  <div class="col-lg-4">
+                    <label class="customCheckbox">Nhà bếp
+                      <input type="checkbox" >
+                      <span class="checkmark"></span>
+                  </div>                     
+                </label>               
+              </div>
+              <P class="rightlabel">Tiện ích giải trí</P>
+              <div class="row">
+                <div class="col-lg-4">
+                <label class="customCheckbox">Cho thú cưng
+                  <input type="checkbox" >
+                  <span class="checkmark"></span>
+                </div>
+                <div class="col-lg-4">
+                  <label class="customCheckbox">Hướng biển
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                </div>
+                  <div class="col-lg-4">
+                    <label class="customCheckbox">BBQ
+                      <input type="checkbox" >
+                      <span class="checkmark"></span>
+                  </div>                     
+                </label>
+              </div>
+              <div class="row">
+                <div class="col-lg-4">
+                <label class="customCheckbox">Bể bơi cá nhân
+                  <input type="checkbox" >
+                  <span class="checkmark"></span>
+                </div>
+                <div class="col-lg-4">
+                  <label class="customCheckbox">Câu cá
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                </div>
+                  <div class="col-lg-4">
+                    <label class="customCheckbox">Cảnh đẹp
+                      <input type="checkbox" >
+                      <span class="checkmark"></span>
+                  </div>                     
+                </label>
+              </div>
+              <P class="rightlabel">Tiện ích</P>
+              <div class="row">
+                <div class="col-lg-4">
+                <label class="customCheckbox">Wifi
+                  <input type="checkbox" >
+                  <span class="checkmark"></span>
+                </div>
+                <div class="col-lg-4">
+                  <label class="customCheckbox">TV
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                </div>
+                  <div class="col-lg-4">
+                    <label class="customCheckbox">Internet
+                      <input type="checkbox" >
+                      <span class="checkmark"></span>
+                  </div>                     
+                </label>
+              </div>
+              <label class="customCheckbox">Điều hòa
+                <input type="checkbox" >
+                <span class="checkmark"></span>
+              </div>
+            </div>
+          </div>
+          <button class="headerButton">Hoàn Tất</button>
+
+                  </form> 
+                
+              
+        </section> 
+    </div>
+</div>
+
+
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>
