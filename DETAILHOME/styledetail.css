@@ -1,0 +1,116 @@
+*{
+    scroll-behavior: smooth;
+    font-family: "Roboto",sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+section{
+    position: relative;
+    height: 1000px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FFFFFF;
+    height: 90px;
+    filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.1));
+    text-align: center;
+}
+nav a{
+    position: relative;
+    width: 75px;
+    height: 21px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 40px;
+    color: #333333;
+    top: 35px;
+}
+nav a[href="#overview"]{
+    margin-left: 135px;
+}
+nav a[href="#"]{
+    margin-left: 400px;
+}
+nav a:hover, 
+section#overview:hover ~ nav a[href="#overview"],
+section#convenient:hover ~ nav a[href="#convenient"],
+section#utilities:hover ~ nav a[href="#utilities"],
+section#price:hover ~ nav a[href="#price"],
+section#rating:hover ~ nav a[href="#rating"],
+section#policy:hover ~ nav a[href="#policy"]
+{
+    color: #A45E4A;
+    /* text-decoration: underline #A45E4A; */
+    border-bottom: 4px solid #A45E4A;
+    padding-bottom: 31px;
+}
+.glideDetailHome{
+    height: 479px;
+}
+.arrowDetail > button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.9;
+    font-size: 20px;
+    color: white;
+    background-color: #D6D6D6;
+}
+.arrowDetail > button:focus{
+    outline: none;
+}
+.glide__track{
+    overflow: none;
+    margin-top: -50px;
+    height: 479px;
+}
+.arrowDetail{
+    margin-top: -240px;
+    margin-left: 136px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.container{
+    padding: 0px !important;
+}
+.row div{
+    padding: 0;
+}
+.containerCard{
+    width: 370px;
+    height: 6000px;
+    margin-top: 60px;
+    position: sticky;
+}
+.cardPrice{
+    
+    position: sticky;
+    top: 120px;
+    width: 370px;
+    height: 368px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.mainContaint h2{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+}
+input[type=text]{
+    width: 310px;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid #999999;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}

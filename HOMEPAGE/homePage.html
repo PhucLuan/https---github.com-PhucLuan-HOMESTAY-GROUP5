@@ -1,0 +1,563 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>ST Home</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Poppins" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/glide.core.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <script src="./js/main.js"></script>
+  <script src="./js/hover.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+  <script src="./js/glide.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container containerHeader">
+      <div class="row rowOfheader">
+        <div class="col-lg-2 Logo">
+          <img class="imgLogoSTHome-Header" src="./img/logoSTpng1 1.png" width="270" height="58" alt="Logo">
+        </div>
+        <div class="col-lg-6">
+          <div class="Filter">
+            <input type="text" class="fas txtSearch" placeholder="&#xf689" style="font-size: 25px;" />
+
+            <input class="textbox-n fas" placeholder="&#xf073 Ngày" type="text" onfocus="(this.type='date')"
+              onblur="(this.type='text')" id="datepicker" />
+            <!-- Example single danger button -->
+            <div class="btn-group filterPeople">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"><i class="fas fa-users">Số khách</i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+            <button type="button" class="btn btn-dark btnSearch"><i class="fas fa-search"></i></button>
+
+          </div>
+        </div>
+        <div class="col-lg-3 offset-lg-1 colHRL">
+          <nav class="Host-Regis-Login">
+            <a id="Host" href="">Host</a>
+            <a id="Regis" href="http://127.0.0.1:5500/REGIS/Regis.html">Đăng Ký</a>
+            <a id="Login" href="http://127.0.0.1:5500/LOGIN/Login.html">Đăng Nhập</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="sectionBanner">
+    <div class="side-indicator">
+      <div class="line"></div>
+      <div class="index one">
+        <p>1</p>
+      </div>
+      <div class="index two">
+        <p>2</p>
+      </div>
+      <div class="index three">
+        <p>3</p>
+      </div>
+      <div class="index four">
+        <p>4</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="text-wrapper">
+        <div class="text">
+          <div id="title">
+            <h4>HẠ LONG</h4>
+            <h4>HÀ NỘI</h4>
+            <h4>SAPA</h4>
+            <h4>ĐÀ NẴNG</h4>
+          </div>
+          <div id="description">
+            <p>
+              Vịnh Hạ Long – được Unesco nhiều lần công nhận là di sản thiên nhiên của thế giới
+	với hàng nghìn hòn đảo được làm nên bởi tạo hoá kỳ vĩ và sống động.
+	Vịnh Hạ Long có phong cảnh tuyệt đẹp nên nơi đây là một điểm du lịch rất hấp dẫn với du khách trong nước và quốc tế.
+            </p>
+            <p>
+              Hồ Hoàn Kiếm còn được gọi là Hồ Gươm, là một hồ nước ngọt tự nhiên nằm ở trung tâm thành phố Hà Nội. 
+	Tên gọi Hoàn Kiếm xuất hiện vào đầu thế kỷ 15 gắn với truyền thuyết vua Lê Lợi trả gươm báu cho Rùa thần. 
+	Theo truyền thuyết, trong một lần vua Lê Lợi dạo chơi trên thuyền, bỗng một con rùa vàng nổi lên mặt nước đòi nhà vua trả thanh gươm mà Long Vương cho mượn để đánh đuổi quân Minh xâm lược.
+ 	Nhà vua liền trả gươm cho rùa thần và rùa lặn xuống nước biến mất. Từ đó hồ được lấy tên là hồ Hoàn Kiếm.
+            </p>
+            <p>
+              Quảng trường Lâm Viên, khu vực nổi tiếng được nhiều người dân gọi trìu mến: trái tim của xứ sở ngàn hoa,
+	một trong những địa điểm thu hút khách du lịch khắp nơi tới thăm thành phố.
+	Với các kiến trúc hoa dã quỳ, atisô, đây được xem là công trình nghệ thuật ấn tượng, biểu tượng đặc trưng của Đà Lạt,
+	Lâm Viên cũng là nơi trung tâm tổ chức nhiều sự kiện quan trọng của thành phố và tỉnh Lâm Đồng, như Festival Hoa Đà Lạt.
+            </p>
+            <p>
+              Cầu Rồng là cây cầu thứ 6 và là cây cầu mới nhất bắc qua sông Hàn, tạo con đường ngắn nhất từ sân bay quốc tế Đà Nẵng tới các đường chính trong thành phố Đà Nẵng,
+	và một tuyến đường trực tiếp đến bãi biển Mỹ Khê và bãi biển Non Nước ở rìa phía đông của thành phố.
+	Vì cây cầu có hình dáng giống một con rồng nên được gọi là Cầu Rồng.
+	Cầu được thiết kế và xây dựng với hình dạng của một con rồng có khả năng phun lửa và phun nước như thật.
+            </p>
+          </div>
+          <div class="btn">
+            <p>Xem chỗ ở</p>
+            <i class="fa fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="glide glideBanner">
+        <div class="glide_cover glideBannerCover"></div>
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide glide__slide_Banner">
+              <div class="slide one">
+                <p>4000 CHỖ Ở</p>
+                <div class="rating">
+                  <div class="circle active"></div>
+                  <div class="circle active"></div>
+                  <div class="circle active"></div>
+                  <div class="circle active"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="slider-image">
+                  <img src="img/IMG - HOMEPAGE/SlideHL.jpg" />
+                  <div class="bookmark">
+                    <i class="fa fa-bookmark"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="slide two">
+                <p>4000 CHỖ Ở</p>
+                <div class="rating">
+                  <div class="circle active"></div>
+                  <div class="circle active"></div>
+                  <div class="circle active"></div>
+                  <div class="circle active"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="slider-image">
+                  <img src="img/IMG - HOMEPAGE/SlideHN.jpg" />
+                  <div class="bookmark">
+                    <i class="fa fa-bookmark"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="slide three">
+                <p>4000 CHỖ Ở</p>
+                <div class="rating">
+                  <div class="circle active"></div>
+                  <div class="circle active"></div>
+                  <div class="circle active"></div>
+                  <div class="circle active"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="slider-image">
+                  <img src="img/IMG - HOMEPAGE/SlideDL.jpg" />
+                  <div class="bookmark">
+                    <i class="fa fa-bookmark"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="slide four">
+                <p>4000 CHỖ Ở</p>
+                <div class="rating">
+                  <div class="circle active"></div>
+                  <div class="circle active"></div>
+                  <div class="circle active"></div>
+                  <div class="circle active"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="slider-image">
+                  <img src="img/IMG - HOMEPAGE/SlideDN.jpg" />
+                  <div class="bookmark">
+                    <i class="fa fa-bookmark"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div data-glide-el="controls" class="controls controlsBanner">
+          <div data-glide-dir="<" id="prev">
+            <i class="fa fa-arrow-left"></i>
+          </div>
+          <div data-glide-dir=">" id="next">
+            <i class="fa fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background"></div>
+  </section>
+  <section class="sectionContent">
+    <div class="sayHello">
+      <p class="sayHello">Chào mừng đến với ST Home</p>
+    </div>
+    <div class="hotLocal">
+      <h3>Địa điểm nổi bật</h3>
+      <div id="carouselhotLocalControls" class="carousel slide slideHotlocal" data-ride="carousel"
+        data-interval="200000">
+        <div class="carousel-inner" id="carousel-inner-hotLocal">
+          <script>
+            var HCMCty = new Object();
+            HCMCty.Name = "Thành phố HCM";
+            HCMCty.Slot = "1000";
+            var HN = new Object();
+            HN.Name = "Hà Nội";
+            HN.Slot = "1200";
+            var DL = new Object();
+            DL.Name = "Đà Lạt";
+            DL.Slot = "1330";
+            var DN = new Object();
+            DN.Name = "Đà Nẵng";
+            DN.Slot = "1400";
+            var TN = new Object();
+            TN.Name = "Tây Ninh";
+            TN.Slot = "1400";
+            let City = [HCMCty, HN, DL, DN, TN];
+            length = City.length;
+            var active = 0;
+            var content = document.getElementById('carousel-inner-hotLocal');
+            for (let i = 0; i < length - 3; i++) {
+              var elmContent = document.createElement("div");
+              if (active == 0) {
+                elmContent.className = "carousel-item active";
+                elmContent.id = "arousel-item active-hotLocal";
+              }
+              else {
+                elmContent.className = "carousel-item";
+                elmContent.id = "carousel-item-hotLocal";
+              }
+              elmContent.innerHTML = ``;
+              content.appendChild(elmContent);//Tạo carousel-item
+              var elmRow = document.getElementById(elmContent.id);
+              var elmSubRow = document.createElement("div");
+              elmSubRow.className = "row rowhotLocal";
+              elmSubRow.id = "row rowhotLocal-hotLocal " + active;
+              elmSubRow.innerHTML = ``;
+              elmRow.appendChild(elmSubRow);//Tạo row rowhotLocal
+              var elmCol = document.getElementById(elmSubRow.id);
+              for (let j = i; j < i + 4; j++) {
+                var elmSubCol = document.createElement("div");
+                elmSubCol.className = "col-lg-3";
+                elmSubCol.innerHTML =
+                  `<div class="card cardHotlocal">
+                                  <h5 class="card-title">${City[j].Name}</h5>
+                                      <p class="card-text">${City[j].Slot} Chỗ ở</p>
+                                  </div>`
+                elmCol.appendChild(elmSubCol);
+              }
+              active = 1;
+            }
+          </script>
+        </div>
+        <a class="carousel-control-prev" href="#carouselhotLocalControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselhotLocalControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="promote">
+      <div class="row rowPromote">
+        <div class="col-lg-4">
+          <div class="ContentPromote">
+            <h3>Khuyến mãi nổi bật</h3>
+            <p>Chỉ có tại ST Home, hấp dẫn và hữu hạn</p>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div id="carouselControlsPromote" class="carousel slide SlideimgPromote" data-ride="carousel"
+            data-interval="200000">
+            <div class="carousel-inner carouselPromote">
+              <div class="carousel-item active itemImgpromote">
+                <div class="row rowItemPromote">
+                  <div class="col-lg-6 colItemPromote">
+                    <img src="./img/Promote/Promote.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col-lg-6 colItemPromote">
+                    <img src="./img/Promote/Promote.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item itemImgpromote">
+                <div class="row rowItemPromote">
+                  <div class="col-lg-6">
+                    <img src="./img/Promote/Promote.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="./img/Promote/Promote.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item itemImgpromote">
+                <div class="row rowItemPromote">
+                  <div class="col-lg-6">
+                    <img src="./img/Promote/Promote.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="./img/Promote/Promote.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-next ControlsNextPromote" href="#carouselControlsPromote" role="button"
+              data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stayat">
+      <div class="StayatLocal">
+        <h3>An tâm lưu trú tại Sài Gòn</h3>
+        <div class="glide glideStayatOne">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="cardStayAt">
+                  <img src="./img/Antamluutru.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="cardStayAt">
+                  <img src="./img/Antamluutru.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="cardStayAt">
+                  <img src="./img/Antamluutru.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="cardStayAt">
+                  <img src="./img/Antamluutru.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="cardStayAt">
+                  <img src="./img/Antamluutru.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div data-glide-el="controls" class="controls controlsStayAt">
+            <div data-glide-dir="<" id="prev">
+              <i class="fa fa-arrow-left"></i>
+            </div>
+            <div data-glide-dir=">" id="next">
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="StayatLocal">
+        <h3>An tâm lưu trú tại Đà Lạt</h3>
+        <div class="glide glideStayatTwo">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="cardStayAt">
+                  <img src="./img/Antamluutru2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="cardStayAt">
+                  <img src="./img/Antamluutru2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="cardStayAt">
+                  <img src="./img/Antamluutru2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="cardStayAt">
+                  <img src="./img/Antamluutru2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="cardStayAt">
+                  <img src="./img/Antamluutru2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div data-glide-el="controls" class="controls controlsStayAt">
+            <div data-glide-dir="<" id="prev">
+              <i class="fa fa-arrow-left"></i>
+            </div>
+            <div data-glide-dir=">" id="next">
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blog">
+      <h3>Blog</h3>
+      <div class="container">
+        <div class="row rowBlog">
+          <div class="col-lg-7 colcontentButton">
+            <div id="Blog1" class="tabcontent">
+              <img src="./img/imgBlog.png" alt="">
+              <p>5 resort hạng sang ở Việt Nam xuất hiện trên tạp chí du lịch Anh</p>
+              <p>Luxury Travel Diary, tạp chí du lịch Anh, đã chỉ ra những resort đẳng cấp bậc nhất ở Việt Nam, hứa hẹn thỏa mãn mọi nhu cầu của các vị khách....</p>
+            </div>
+
+            <div id="Blog2" class="tabcontent">
+              <p>Blog2</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam perferendis
+                consequatur
+                quis non nemo quam tempora rem necessitatibus voluptates, reiciendis molestias
+                blanditiis animi dolorem corrupti unde aliquam eaque at autem?</p>
+            </div>
+
+            <div id="Blog3" class="tabcontent">
+              <p>Blog3</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam tempore temporibus
+                eligendi aliquam sed architecto quisquam est, dolorum repellat aperiam voluptatibus
+                nemo
+                at incidunt eum quae ducimus expedita neque alias!</p>
+            </div>
+
+          </div>
+          <div class="col-lg-5 coltabButton">
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'Blog1')" id="defaultOpen">Blog1</button>
+              <button class="tablinks" onclick="openCity(event, 'Blog2')">Blog2</button>
+              <button class="tablinks" onclick="openCity(event, 'Blog3')">Blog3</button>
+              <button class="tablinks seeMore">Xem thêm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container containerFooter">
+      <div class="row rowFooter">
+        <div class="col-lg-3">
+          <div class="contact">
+            <img class="LogoSTHome-footer" src="./img/logoSTpng1 1.png" width="270" height="58" alt="Logo">
+            <p>Contact</p>
+            <i class="fas fa-phone-volume">0123456789</i>
+            <div class="Follow">
+              <p>Follow</p>
+              <i class="fab fa-facebook" style="color: #3B5998;"></i>
+              <i class="fab fa-twitter" style="color: #55ACEE;"></i>
+              <i class="fab fa-google-plus" style="color: #dd4b39;"></i>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="loveHomeStay colfooter">
+            <h2>HOMESTAY ĐƯỢC YÊU THÍCH</h2>
+            <p>Homestay Đà Lạt</p>
+            <p>Homestay Hà Nội</p>
+            <p>Homestay Hồ Chí Minh</p>
+            <p>Homestay Sapa</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="loveSpace colfooter">
+            <h2>KHÔNG GIAN ƯA THÍCH</h2>
+            <p>Căn hộ dịch vụ</p>
+            <p>Biệt thự</p>
+            <p>Nhà riêng</p>
+            <p>Studio</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="aboutUs colfooter">
+            <h2>VỀ CHÚNG TÔI</h2>
+            <p>Blog</p>
+            <p>Điều khoản hoạt động</p>
+            <p>info@sthome.com</p>
+            <p>Trang thông tin cho chủ nhà</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/javascrip.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

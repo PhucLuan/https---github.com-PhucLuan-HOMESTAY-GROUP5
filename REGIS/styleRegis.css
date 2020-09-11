@@ -1,0 +1,178 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+[href]{
+    color: #A45E4A;
+}
+.container{
+    padding: 0px !important;
+    margin: 0px auto !important;
+    max-width: 1170px !important;
+}
+.rowOfheader{
+    width: 100%;
+    height: 90px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    align-items: center;
+}
+.Logo{
+    margin-left: -0px;
+}
+.imgLogoSTHome-Header{
+    width: 170px;
+    height: 40px;
+}
+.colHRL{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.Host-Regis-Login{
+    text-align: right;
+}
+.Host-Regis-Login > a {
+    margin-left: 20px;
+    color: #666666;;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+.rowContent{
+    height: 240px;
+}
+/* .sayHello{
+    font-size: 1.75rem;
+} */
+.Host-Regis-Login > a:hover{
+    text-decoration: none;
+    color: #A45E4A;
+}
+/*-----------------------Nội dung------------------------*/
+.backgroundContent{
+    background: linear-gradient(180deg, #A45E4A 0%, #CC8672 100%);
+    height: 239px;
+}
+.SectionContent{
+    height: 900px;
+}
+.cardLogin{
+    height: 800px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    padding-left: 30px;
+    margin-top: -174px;
+}
+.colContent {
+    width: 670px;
+    height: 93px;
+    margin-top: 81px;
+    color: white;
+}
+.firstContent{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.secondContent{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+.containerPromote{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.carPromote{
+    width: 370px;
+    height: 214px;
+    background: #FFFFFF;
+    box-shadow: 0px -1px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-left: 6px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.imgPromote{
+    width: 70px;
+    height: 70px;
+    margin-top: 4px;
+}
+.titlePromote{
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+.contentPromote{
+    margin-top: 30px;
+}
+.titleLogin{
+    margin-bottom: 0px;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+}
+.descriptLogin{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+}
+.Maincontent{
+    width: 310px;
+    height: 650px;
+    margin-top: 50px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 16px;
+}
+.contentInfo{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 24px;
+}
+.contentInfo > p{
+    margin: 0px;
+}
+.btnRegis{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    background: linear-gradient(90deg, #CF8874 0%, #A45E4A 100%);
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.InputContent{
+    margin-top: 14px;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.contentInfo-scrip{
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+}
+footer > P{
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+
+}
