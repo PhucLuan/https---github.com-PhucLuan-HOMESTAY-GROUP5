@@ -25,39 +25,53 @@
 <body>
   <header>
     <div class="container containerHeader">
-      <div class="row rowOfheader">
-        <div class="col-lg-2 Logo">
-          <img class="imgLogoSTHome-Header" src="./img/logoSTpng1 1.png" width="270" height="58" alt="Logo">
-        </div>
-        <div class="col-lg-6">
-          <div class="Filter">
-            <input type="text" class="fas txtSearch" placeholder="&#xf689" style="font-size: 25px;" />
-
-            <input class="textbox-n fas" placeholder="&#xf073 Ngày" type="text" onfocus="(this.type='date')"
-              onblur="(this.type='text')" id="datepicker" />
-            <!-- Example single danger button -->
-            <div class="btn-group filterPeople">
-              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false"><i class="fas fa-users">Số khách</i></button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
-            </div>
-            <button type="button" class="btn btn-dark btnSearch"><i class="fas fa-search"></i></button>
-
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="col-lg-2 col-sm-2 col-2">
+            <img class="imgLogoSTHome-Header" src="./img/logoSTpng1 1.png" alt="Logo">
           </div>
-        </div>
-        <div class="col-lg-3 offset-lg-1 colHRL">
-          <nav class="Host-Regis-Login">
-            <a id="Host" href="">Host</a>
-            <a id="Regis" href="http://127.0.0.1:5500/REGIS/Regis.html">Đăng Ký</a>
-            <a id="Login" href="http://127.0.0.1:5500/LOGIN/Login.html">Đăng Nhập</a>
-          </nav>
-        </div>
+          <div class="col-lg-6 col-sm-5 col-6">
+            <div class="Filter">
+              <input type="text" class="fas txtSearch" placeholder="&#xf689" style="font-size: 25px;" />
+
+              <input class="textbox-n fas" placeholder="&#xf073 Ngày" type="text" onfocus="(this.type='date')"
+                onblur="(this.type='text')" id="datepicker" />
+              <div class="btn-group filterPeople">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false"><i class="fas fa-users">Số khách</i></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
+              <button type="button" class="btn btn-dark btnSearch"><i class="fas fa-search"></i></button>
+
+            </div>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="col-lg-3 offset-lg-1">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Host</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Đăng ký</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Đăng nhập</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </nav>
       </div>
     </div>
   </header>
@@ -89,26 +103,31 @@
           <div id="description">
             <p>
               Vịnh Hạ Long – được Unesco nhiều lần công nhận là di sản thiên nhiên của thế giới
-	với hàng nghìn hòn đảo được làm nên bởi tạo hoá kỳ vĩ và sống động.
-	Vịnh Hạ Long có phong cảnh tuyệt đẹp nên nơi đây là một điểm du lịch rất hấp dẫn với du khách trong nước và quốc tế.
+              với hàng nghìn hòn đảo được làm nên bởi tạo hoá kỳ vĩ và sống động.
+              Vịnh Hạ Long có phong cảnh tuyệt đẹp nên nơi đây là một điểm du lịch rất hấp dẫn với du khách trong nước
+              và quốc tế.
             </p>
             <p>
-              Hồ Hoàn Kiếm còn được gọi là Hồ Gươm, là một hồ nước ngọt tự nhiên nằm ở trung tâm thành phố Hà Nội. 
-	Tên gọi Hoàn Kiếm xuất hiện vào đầu thế kỷ 15 gắn với truyền thuyết vua Lê Lợi trả gươm báu cho Rùa thần. 
-	Theo truyền thuyết, trong một lần vua Lê Lợi dạo chơi trên thuyền, bỗng một con rùa vàng nổi lên mặt nước đòi nhà vua trả thanh gươm mà Long Vương cho mượn để đánh đuổi quân Minh xâm lược.
- 	Nhà vua liền trả gươm cho rùa thần và rùa lặn xuống nước biến mất. Từ đó hồ được lấy tên là hồ Hoàn Kiếm.
+              Hồ Hoàn Kiếm còn được gọi là Hồ Gươm, là một hồ nước ngọt tự nhiên nằm ở trung tâm thành phố Hà Nội.
+              Tên gọi Hoàn Kiếm xuất hiện vào đầu thế kỷ 15 gắn với truyền thuyết vua Lê Lợi trả gươm báu cho Rùa thần.
+              Theo truyền thuyết, trong một lần vua Lê Lợi dạo chơi trên thuyền, bỗng một con rùa vàng nổi lên mặt nước
+              đòi nhà vua trả thanh gươm mà Long Vương cho mượn để đánh đuổi quân Minh xâm lược.
+              Nhà vua liền trả gươm cho rùa thần và rùa lặn xuống nước biến mất. Từ đó hồ được lấy tên là hồ Hoàn Kiếm.
             </p>
             <p>
               Quảng trường Lâm Viên, khu vực nổi tiếng được nhiều người dân gọi trìu mến: trái tim của xứ sở ngàn hoa,
-	một trong những địa điểm thu hút khách du lịch khắp nơi tới thăm thành phố.
-	Với các kiến trúc hoa dã quỳ, atisô, đây được xem là công trình nghệ thuật ấn tượng, biểu tượng đặc trưng của Đà Lạt,
-	Lâm Viên cũng là nơi trung tâm tổ chức nhiều sự kiện quan trọng của thành phố và tỉnh Lâm Đồng, như Festival Hoa Đà Lạt.
+              một trong những địa điểm thu hút khách du lịch khắp nơi tới thăm thành phố.
+              Với các kiến trúc hoa dã quỳ, atisô, đây được xem là công trình nghệ thuật ấn tượng, biểu tượng đặc trưng
+              của Đà Lạt,
+              Lâm Viên cũng là nơi trung tâm tổ chức nhiều sự kiện quan trọng của thành phố và tỉnh Lâm Đồng, như
+              Festival Hoa Đà Lạt.
             </p>
             <p>
-              Cầu Rồng là cây cầu thứ 6 và là cây cầu mới nhất bắc qua sông Hàn, tạo con đường ngắn nhất từ sân bay quốc tế Đà Nẵng tới các đường chính trong thành phố Đà Nẵng,
-	và một tuyến đường trực tiếp đến bãi biển Mỹ Khê và bãi biển Non Nước ở rìa phía đông của thành phố.
-	Vì cây cầu có hình dáng giống một con rồng nên được gọi là Cầu Rồng.
-	Cầu được thiết kế và xây dựng với hình dạng của một con rồng có khả năng phun lửa và phun nước như thật.
+              Cầu Rồng là cây cầu thứ 6 và là cây cầu mới nhất bắc qua sông Hàn, tạo con đường ngắn nhất từ sân bay quốc
+              tế Đà Nẵng tới các đường chính trong thành phố Đà Nẵng,
+              và một tuyến đường trực tiếp đến bãi biển Mỹ Khê và bãi biển Non Nước ở rìa phía đông của thành phố.
+              Vì cây cầu có hình dáng giống một con rồng nên được gọi là Cầu Rồng.
+              Cầu được thiết kế và xây dựng với hình dạng của một con rồng có khả năng phun lửa và phun nước như thật.
             </p>
           </div>
           <div class="btn">
@@ -279,7 +298,7 @@
         </a>
       </div>
     </div>
-    
+
     <div class="promote">
       <div class="row rowPromote">
         <div class="col-lg-4">
@@ -343,7 +362,8 @@
                   <img src="./img/Antamluutru.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
                   </div>
                 </div>
               </li>
@@ -352,7 +372,8 @@
                   <img src="./img/Antamluutru.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
                   </div>
                 </div>
               </li>
@@ -361,7 +382,8 @@
                   <img src="./img/Antamluutru.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
                   </div>
                 </div>
               </li>
@@ -370,7 +392,8 @@
                   <img src="./img/Antamluutru.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
                   </div>
                 </div>
               </li>
@@ -379,7 +402,8 @@
                   <img src="./img/Antamluutru.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
                   </div>
                 </div>
               </li>
@@ -405,7 +429,8 @@
                   <img src="./img/Antamluutru2.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
                   </div>
                 </div>
               </li>
@@ -414,7 +439,8 @@
                   <img src="./img/Antamluutru2.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
                   </div>
                 </div>
               </li>
@@ -423,7 +449,8 @@
                   <img src="./img/Antamluutru2.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
                   </div>
                 </div>
               </li>
@@ -432,7 +459,8 @@
                   <img src="./img/Antamluutru2.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
                   </div>
                 </div>
               </li>
@@ -441,7 +469,8 @@
                   <img src="./img/Antamluutru2.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
                   </div>
                 </div>
               </li>
@@ -466,7 +495,8 @@
             <div id="Blog1" class="tabcontent">
               <img src="./img/imgBlog.png" alt="">
               <p>5 resort hạng sang ở Việt Nam xuất hiện trên tạp chí du lịch Anh</p>
-              <p>Luxury Travel Diary, tạp chí du lịch Anh, đã chỉ ra những resort đẳng cấp bậc nhất ở Việt Nam, hứa hẹn thỏa mãn mọi nhu cầu của các vị khách....</p>
+              <p>Luxury Travel Diary, tạp chí du lịch Anh, đã chỉ ra những resort đẳng cấp bậc nhất ở Việt Nam, hứa hẹn
+                thỏa mãn mọi nhu cầu của các vị khách....</p>
             </div>
 
             <div id="Blog2" class="tabcontent">
