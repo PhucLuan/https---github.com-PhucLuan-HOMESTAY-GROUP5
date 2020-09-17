@@ -3,7 +3,42 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
+/*--------------------------------Header-------------------------------------*/
+header{
+    display: block;
+  }
+  .containerHeader{
+    padding: 0 !important;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .containerHeader nav{
+    height: 90px !important;
+  }
+  .nav-link:hover{
+    color: #A45E4A !important;
+  }
+  .navbar-collapse{
+    margin-left: auto;
+  }
+  .navbar-brand-Intag{
+    visibility: hidden;
+  }
+  @media only screen and (max-width: 768px){
+    .containerHeader nav{
+      height: auto !important;
+    }
+  }
+  @media only screen and (max-width: 414px){
+    .navbar-brand-hide{
+        display: none !important;
+    }
+    .navbar-brand-Intag{
+        visibility: visible;
+    }
+  }
+/*--------------------------------Content--------------------------------------------*/
 [href]{
     color: #A45E4A;
 }
@@ -55,9 +90,6 @@
     background: linear-gradient(180deg, #A45E4A 0%, #CC8672 100%);
     height: 239px;
 }
-.SectionContent{
-    height: 900px;
-}
 .cardLogin{
     height: 800px;
     background-color: #FFFFFF;
@@ -89,7 +121,7 @@
     margin-top: 40px;
 }
 .carPromote{
-    width: 370px;
+    width: 48%;
     height: 214px;
     background: #FFFFFF;
     box-shadow: 0px -1px 20px rgba(0, 0, 0, 0.1);
@@ -128,7 +160,7 @@
     color: #333333;
 }
 .Maincontent{
-    width: 310px;
+    width: 100%;
     height: 650px;
     margin-top: 50px;
     color: #666666;
@@ -136,7 +168,7 @@
     line-height: 16px;
 }
 .contentInfo{
-    width: 100%;
+    width: 90%;
     height: 80px;
     margin-bottom: 24px;
 }
@@ -145,7 +177,7 @@
 }
 .btnRegis{
     text-align: center;
-    width: 100%;
+    width: 90%;
     height: 50px;
     border-style: none;
     border-radius: 10px;
@@ -175,4 +207,20 @@ footer > P{
     line-height: 16px;
     color: #999999;
 
+}
+@media  only screen and (max-width: 1200px){
+.cardLogin{
+    margin-top: -70px !important;
+}
+
+}
+@media  only screen and (max-width: 1024px){
+    .containerPromote{
+        margin-left: 20px;
+    } 
+}
+@media  only screen and (max-width: 414px){
+    .carPromote{
+        width: 90%;
+    }
 }

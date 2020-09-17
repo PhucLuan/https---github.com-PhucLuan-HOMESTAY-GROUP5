@@ -28,6 +28,7 @@ header {
 
 .Logo > div {
   padding-left: 10px;
+  width: 125px;
 }
 
 div > .host_inf {
@@ -40,8 +41,9 @@ div > .host_inf {
   border-radius: 8px;
   /* padding: 10px 30px; */
   background: linear-gradient(90deg, #cb846f 0%, #a45e4a 100%);
-  padding-top: 13px;
+  padding-top: 10px;
   color: white;
+  border-top: 3x;
 }
 
 .img_host {
@@ -250,6 +252,10 @@ div > .host_inf {
   border-radius: 8px;
   padding: 15px 14px;
 }
+.dropDown {
+  width: 330px;
+  border-style: hidden;
+}
 
 .birth {
   width: 370px;
@@ -302,12 +308,60 @@ div > .host_inf {
   font-size: 18px;
   color: #666666;
 }
+#cameraInput {
+  width: 170px;
+  height: 170px;
+  text-align: center;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  align-items: center;
+}
 
-.saveSetting {
+
+.restplace:hover {
+  background-color: #a45e4a;
+  color: #ffffff;
+  box-shadow: 0 3px #999999;
+}
+.restplace:active {
+  margin-top: 4px;
+  transition: translate(0.4px);
+  box-shadow: 0px 3px #f3f3f3;
+}
+.customer:hover {
+  background-color: #a45e4a;
+  color: #ffffff;
+  box-shadow: 0 3px #999999;
+}
+.customer:active {
+  margin-top: 4px;
+  transition: translate(0.4px);
+  box-shadow: 0px 3px #f3f3f3;
+}
+.create_new_property:hover{  color: #ffffff;
+  box-shadow: 0 3px #999999;
+}
+.create_new_property:active{
+  padding-top: 15px;
+  transition: translate(0.4px);
+  box-shadow: 0px 3px #f3f3f3;
+}
+.saveSetting:hover {
+  background-color: #a45e4a;
+  color: #ffffff;
+  box-shadow: 0 5px #999999;
+}
+.saveSetting:active{
+  transition: translate(0.4px);
+  box-shadow: 3px 4px #f3f3f3;
+}
+
+.btn.saveSetting {
   width: 200px;
   height: 55px;
   border-radius: 8px;
-  background: linear-gradient(90deg, #cb846f 0%, #a45e4a 100%);
+  background: #a45e4a;
   padding-top: 13px;
   color: white;
   text-align: center;
@@ -315,6 +369,11 @@ div > .host_inf {
   margin-bottom: 60px;
   padding-top: 15px;
 }
+
+
+
+
+
 
 .footerHost1 {
   height: 50px;

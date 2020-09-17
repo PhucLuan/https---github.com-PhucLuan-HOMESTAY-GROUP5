@@ -9,18 +9,21 @@
     <link rel="stylesheet" href="../HOMEPAGE/css/glide.core.min.css">
     <script src="../HOMEPAGE/js/glide.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" rel="stylesheet" />
-    <script src="./detailjs.js"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
-        <title>Chi tiết HomeStay</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./detailjs.js"></script>
+    <title>Chi tiết HomeStay</title>
 </head>
 
 <body>
     <section class="Hide" style="height: 90px;"></section>
+    <div class="IdHome">
+        <img src="./img/MaChoO.png" alt="" class="img-fluid" id="IdHome">
+        <p>ID HOME</p>
+    </div>
     <section id="overview">
         <div class="glide glideDetailHome">
             <div class="glide__track" data-glide-el="track">
@@ -30,7 +33,7 @@
                     <li class="glide__slide"><img src="./img/imgDetail1.png" alt=""></li>
                 </ul>
             </div>
-            <div class="glide__arrows arrowDetail" data-glide-el="controls">
+            <div class="glide__arrows arrowDetail" data-glide-el="controls" id="arrowBanner">
                 <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
                         class="fa fa-arrow-left"></i></button>
                 <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
@@ -40,7 +43,7 @@
         <div class="contentOverview">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mainContaint">
+                    <div class="col-lg-8 mainContaint" id="mainContaint">
                         <h1>Meo Homestay Phố cổ - Mun's room</h1>
                         <p>Vietnam, Hoàn Kiếm, Hà Nội</p>
                         <p>Căn hộ Studio-15m2</p>
@@ -66,7 +69,7 @@
                             vời cùng nhau.<br>
                         </p>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" id="colCard">
                         <div class="containerCard">
                             <div class="cardPrice">
                                 <p>598,915đ/đêm</p>
@@ -84,34 +87,50 @@
     <section id="convenient">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mainContaint">
+                <div class="col-lg-8 mainContaint" id="mainContaint">
                     <h2>Tiện nghi chỗ ở</h2>
-                    <div class="row rowconvenient">
+                    <div class="row rowconvenient" id="listGroup">
                         <div class="col-4 colListconvenient">
-                          <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Tiện ích</a>
-                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Tiện ích giải trí</a>
-                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Tiện ích phòng</a>
-                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Tiện ích gia đình</a>
-                          </div>
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                    data-toggle="list" href="#list-home" role="tab" aria-controls="home">Tiện ích</a>
+                                <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                    data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Tiện ích
+                                    giải trí</a>
+                                <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                    data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Tiện
+                                    ích phòng</a>
+                                <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                    data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Tiện
+                                    ích gia đình</a>
+                            </div>
                         </div>
                         <div class="col-8 colContentconvenient">
-                          <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et, fugit at perspiciatis iste libero, maiores aspernatur culpa esse magnam nam neque a eaque natus consequatur ipsam suscipit quis illum.
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                    aria-labelledby="list-home-list">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et, fugit at
+                                    perspiciatis iste libero, maiores aspernatur culpa esse magnam nam neque a eaque
+                                    natus consequatur ipsam suscipit quis illum.
+                                </div>
+                                <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                    aria-labelledby="list-profile-list">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                                <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                    aria-labelledby="list-messages-list">
+                                    Soluta nostrum hic veniam doloremque at assumenda velit optio dicta laboriosam? In
+                                    adipisci maxime libero quasi architecto ut vero iure sunt numquam?
+                                </div>
+                                <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                    aria-labelledby="list-settings-list">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere reiciendis adipisci
+                                    earum repudiandae natus optio dicta alias odio consectetur, expedita ratione soluta
+                                    sint possimus ipsa, debitis, quia quos perferendis delectus.
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            </div>
-                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                                Soluta nostrum hic veniam doloremque at assumenda velit optio dicta laboriosam? In adipisci maxime libero quasi architecto ut vero iure sunt numquam?
-                            </div>
-                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere reiciendis adipisci earum repudiandae natus optio dicta alias odio consectetur, expedita ratione soluta sint possimus ipsa, debitis, quia quos perferendis delectus.
-                            </div>
-                          </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,34 +138,51 @@
     <section id="utilities">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mainContaint">
-                    <h2>Tiện nghi chỗ ở</h2>
-                    <div class="row rowutilities">
+                <div class="col-lg-8 mainContaint" id="mainContaint">
+                    <h2>Tiện ích xung quanh</h2>
+                    <div class="row rowutilities" id="listGroup">
                         <div class="col-4 colListconvenient">
-                          <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Địa điểm nổi tiếng</a>
-                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Ẩm thực</a>
-                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Giải trí</a>
-                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Y tế</a>
-                          </div>
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                    data-toggle="list" href="#list-home" role="tab" aria-controls="home">Địa điểm nổi
+                                    tiếng</a>
+                                <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                    data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Ẩm
+                                    thực</a>
+                                <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                    data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Giải
+                                    trí</a>
+                                <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                    data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Y
+                                    tế</a>
+                            </div>
                         </div>
                         <div class="col-8 colContentconvenient">
-                          <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                                Loremr sit amet consectetur adipisicing elit. Voluptate et, fugit at perspiciatis iste libero, maiores aspernatur culpa esse magnam nam neque a eaque natus consequatur ipsam suscipit quis illum.
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                    aria-labelledby="list-home-list">
+                                    Loremr sit amet consectetur adipisicing elit. Voluptate et, fugit at perspiciatis
+                                    iste libero, maiores aspernatur culpa esse magnam nam neque a eaque natus
+                                    consequatur ipsam suscipit quis illum.
+                                </div>
+                                <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                    aria-labelledby="list-profile-list">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                                <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                    aria-labelledby="list-messages-list">
+                                    Soluta nostrum hic veniam doloremque at assumenda velit optio dicta laboriosam? In
+                                    adipisci maxime libero quasi architecto ut vero iure sunt numquam?
+                                </div>
+                                <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                    aria-labelledby="list-settings-list">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere reiciendis adipisci
+                                    earum repudiandae natus optio dicta alias odio consectetur, expedita ratione soluta
+                                    sint possimus ipsa, debitis, quia quos perferendis delectus.
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            </div>
-                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                                Soluta nostrum hic veniam doloremque at assumenda velit optio dicta laboriosam? In adipisci maxime libero quasi architecto ut vero iure sunt numquam?
-                            </div>
-                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere reiciendis adipisci earum repudiandae natus optio dicta alias odio consectetur, expedita ratione soluta sint possimus ipsa, debitis, quia quos perferendis delectus.
-                            </div>
-                          </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -154,7 +190,7 @@
     <section id="price">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mainContaint">
+                <div class="col-lg-8 mainContaint" id="mainContaint">
                     <h2>Giá phòng</h2>
                     <div class="priceDetail">
                         <div class="priceDay priceDayOdd">
@@ -189,7 +225,7 @@
     <section id="rating">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mainContaint">
+                <div class="col-lg-8 mainContaint" id="mainContaint">
                     <h2>Đánh giá</h2>
                 </div>
             </div>
@@ -198,10 +234,12 @@
     <section id="policy">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mainContaint">
+                <div class="col-lg-8 mainContaint" id="mainContaint">
                     <h2>Nội quy và chính sách</h2>
                     <h3>Chính sách hủy phòng</h3>
-                    <p>Trung bình: Miễn phí hủy phòng trong vòng 48h sau khi đặt phòng thành công và trước 5 ngày so với thời gian check-in. Sau đó, hủy phòng trước 5 ngày so với thời gian check-in, được hoàn lại 100% tổng số tiền đã trả (trừ phí dịch vụ).</p>
+                    <p>Trung bình: Miễn phí hủy phòng trong vòng 48h sau khi đặt phòng thành công và trước 5 ngày so với
+                        thời gian check-in. Sau đó, hủy phòng trước 5 ngày so với thời gian check-in, được hoàn lại 100%
+                        tổng số tiền đã trả (trừ phí dịch vụ).</p>
                     <h3>Lưu ý đặc biệt</h3>
                     <p>Check in 14h - check out 12h
                         Nằm trong khu dân cư phố cổ nên yêu cầu giữ gìn không gian chung và không làm ồn.</p>
@@ -222,71 +260,84 @@
     </section>
     <section class="similar">
         <div class="container">
-            
-                    <h2>Chỗ ở tương tự</h2>
-                    <div class="glide glideSimilarHome">
-                        <div class="glide__track" data-glide-el="track">
-                            <ul class="glide__slides">
-                                <li class="glide__slide">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="./img/similarStay1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Căn hộ Studio</h5>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                      </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="./img/similarStay1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Căn hộ Studio</h5>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                      </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="./img/similarStay1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Căn hộ Studio</h5>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                      </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="glide__arrows arrowDetail" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
-                                    class="fa fa-arrow-left"></i></button>
-                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
-                                    class="fa fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                
-            
+            <h2>Chỗ ở tương tự</h2>
+            <div class="glide glideSimilarHome">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./img/similarStay1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Căn hộ Studio</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./img/similarStay1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Căn hộ Studio</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./img/similarStay1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Căn hộ Studio</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__arrows arrowDetail" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                            class="fa fa-arrow-left"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                            class="fa fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
     </section>
     <nav>
-        <a href="#overview">Tổng quan</a>
-        <a href="#convenient">Tiện nghi</a>
-        <a href="#utilities">Tiện ích</a>
-        <a href="#price">Giá phòng</a>
-        <a href="#rating">Đánh giá</a>
-        <a href="#policy">Chính sách</a>
-        <a href="#">Về đầu trang</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 " id="navTitle">
+                    <a href="#overview">Tổng quan</a>
+                    <a href="#convenient">Tiện nghi</a>
+                    <a href="#utilities">Tiện ích</a>
+                    <a href="#price">Giá phòng</a>
+                    <a href="#rating">Đánh giá</a>
+                    <a href="#policy">Chính sách</a> 
+                </div>
+                <div class="col-md-2 offset-1 " id="navComeback">
+                    <a href="#" id="comeBack">Về đầu trang</a>
+                </div>
+            </div>
+        </div>
     </nav>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
         integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
         crossorigin="anonymous"></script>
-        <!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

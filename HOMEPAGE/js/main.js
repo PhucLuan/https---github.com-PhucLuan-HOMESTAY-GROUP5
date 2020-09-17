@@ -5,23 +5,55 @@ document.addEventListener("DOMContentLoaded", () => {
     startAt: 0,
     animationTimingFunc: "ease-in-out",
     gap: 100,
-    perView: 3
+    perView: 3,
+    breakpoints: {
+      1024: {
+        perView: 2,
+      }}
   }).mount();
 
   new Glide(".glideStayatOne", {
     type: "carousel",
     startAt: 0,
     animationTimingFunc: "ease-in-out",
-    gap: 100,
-    perView: 4
+    perView: 4,
+    breakpoints: {
+      1024: {
+        perView: 3,
+      }}
   }).mount();
 
   new Glide(".glideStayatTwo", {
     type: "carousel",
     startAt: 0,
     animationTimingFunc: "ease-in-out",
-    gap: 100,
-    perView: 4
+    perView: 4,
+    breakpoints: {
+      1024: {
+        perView: 3,
+      }}
+  }).mount();
+  new Glide(".glideHotLocal", {
+    type: "carousel",
+    startAt: 0,
+    animationTimingFunc: "ease-in-out",
+    perView: 4,
+    breakpoints: {
+      1024: {
+        perView: 3,
+      }}
+  }).mount();
+  new Glide(".glidePromote", {
+    type: "carousel",
+    startAt: 0,
+    gap: 10,
+    animationTimingFunc: "ease-in-out",
+    perView: 2,
+    breakpoints: {
+      1024: {
+        perView: 1,
+        gap: 10
+      }}
   }).mount();
 
   let prevBtn = document.getElementById("prev");
@@ -29,20 +61,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let background = document.querySelector(".background");
   let indices = document.querySelectorAll(".index");
-
-  //let bgImgs = ["Indonesia.jpg", "Kerala.jpg", "Bali.jpg", "Thailand.jpg"];
   
   let currentIndex = 0;
 
   indices.forEach(index => index.classList.remove("active"));
   indices[currentIndex].classList.add("active");
   if (!window.dataIsLoaded) {
-    // load the data
     let bgImgs = ["IMG - HOMEPAGE/HL.jpg",
   "IMG - HOMEPAGE/HN.jpg",
   "IMG - HOMEPAGE/DL.jpg",
   "IMG - HOMEPAGE/DN.jpg"];
-    //let bgImgs = ["Indonesia.jpg", "Kerala.jpg", "Bali.jpg", "Thailand.jpg"];
+
     var myAnimation = new hoverEffect({
       parent: document.querySelector(".background"),
       intensity: 0.3,
@@ -127,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let titleDisplacement = 0;
   let descriptionDisplacement = 0;
-
+  let screenWidth = window.screen.width;
   function showTextAnimation(direction) {
     if (titleDisplacement === 0 && direction === "prev") {
       titleDisplacement = -450;
@@ -140,18 +169,26 @@ document.addEventListener("DOMContentLoaded", () => {
           : titleDisplacement + 150;
     }
 
-    if (descriptionDisplacement === 0 && direction === "prev") {
-      descriptionDisplacement = -165;
-    } 
-    else if(descriptionDisplacement === -165 && direction === "next"){
-      descriptionDisplacement = 0;
-    }
-    else {
-      descriptionDisplacement =
-        direction === "next" 
-          ? descriptionDisplacement - 55
-          : descriptionDisplacement + 55;
-    }
+    // if (descriptionDisplacement === 0 && direction === "prev") {
+    //   descriptionDisplacement = -165;
+    // } 
+    // else if(descriptionDisplacement === -165 && direction === "next"){
+    //   descriptionDisplacement = 0;
+    // }
+    // else {
+    //   if (screenWidth > 1024) {
+    //     descriptionDisplacement =
+    //     direction === "next" 
+    //       ? descriptionDisplacement - 55
+    //       : descriptionDisplacement + 55;
+    //   } else {
+    //     descriptionDisplacement =
+    //     direction === "next" 
+    //       ? descriptionDisplacement - 55
+    //       : descriptionDisplacement + 55;
+    //   }
+      
+    // }
 
     let title = document.querySelectorAll("#title h4");
     let description = document.querySelectorAll("#description p");
@@ -163,18 +200,25 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    description.forEach((description, index) => {
-      let opacity = 0;
-      if(index === currentIndex){
-        opacity = 1;
-      }else {
-        opacity = 0;
-      }
-      TweenMax.to(description, 1, {
-        top: `${descriptionDisplacement}px`,
-        ease: Strong.easeInOut,
-        opacity: opacity
-      });
-    })
+    // description.forEach((description, index) => {
+    //   let opacity = 0;
+    //   if(index === currentIndex){
+    //     opacity = 1;
+    //   }else {
+    //     opacity = 0;
+    //   }
+    //   TweenMax.to(description, 1, {
+    //     top: `${descriptionDisplacement}px`,
+    //     ease: Strong.easeInOut,
+    //     opacity: opacity
+    //   });
+    // })
   }
 });
+
+
+    
+        
+
+   
+// }
