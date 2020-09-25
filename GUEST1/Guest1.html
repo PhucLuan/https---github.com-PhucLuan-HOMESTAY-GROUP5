@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./StyleGuest1.css">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Guest1</title>
+</head>
+<body>
+    <header class="headerGuest1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav__header">
+            <div class="container containerHeader">
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="./img/logoSTpng1 1.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">Đặt chỗ của tôi</a>
+                        <a class="nav-link" href="#">Cài đặt tài khoản</a>
+                        <div class="profile">
+                            <p class="contentId">TÀI KHOẢN CỦA TÔI</p>
+                            <p class="contentName">Hoài Thương</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="contentGuest1">
+        <div class="container containerMain">
+            <div class="row rowMain">
+               
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 cardGuest1">
+                    <div class="nameAvt">
+                        <img src="./img/Mask Group.png" alt="">
+                        <a class="name" href="#">Hoài Thương</a>
+                    </div>
+                    <div class="infoID">
+                        <a class="info" href="#">Thông tin tài khoản</a>
+                    </div>
+                   
+                </div>
+              
+                <div class="col-12 col-sm-8 col-md-8 col-lg-3 offset-lg-5 rightHost">
+                    <form>
+                        <div class="buttonHost">
+                            <input type="button" name="Trở thành chủ nhà" value="Trở thành chủ nhà">
+                            
+                        </div>
+                    </form>
+
+                </div>    
+              
+            </div>    
+        </div>
+    </section>
+    <main>
+        <div class="container containerAvt">
+            <div class="row rowAvt">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 colAvt">
+                    
+                </div>
+               
+                <div class="col-12 col-sm-8 col-md-8 col-lg-8 groupIdButtonAvt">
+                    <img src="./img/Mask Group.png" alt="">
+                    <p class="idCustomer">IDKH: 12345</p>
+                    <form>
+                        <div class="buttonAvt">
+                            <input type="button" name="Đổi ảnh đại diện" value="Đổi ảnh đại diện"  />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row rowInfo">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                    
+                </div>
+                <div class="col-12 col-sm-8 col-md-8 col-lg-8 colInfo">
+                    <form>
+                        <div class="fullName">
+                            <div class="fullName1">
+                                <p>Họ tên</p>
+                                <input type="text" name="Hoài Thương" value="Hoài Thương" /> 
+                            </div>
+                            <div class="eMail">
+                                <p>Địa chỉ email</p>
+                                <input type="text" name="hoaithuong@gmail.com" value="hoaithuong@gmail.com" /> 
+                            </div>
+                      
+                            <div class="sexPhone">
+                                <div class="phone">
+                                    <p>Số điện thoại</p>
+                                    <img src="./img/Group.png" alt="">
+                                    <input type="text" name="0123 456 789" value="0123 456 789" />
+                                   
+                                </div>
+                                <div class="maleFemale">
+                                    <p>Giới tính</p>
+                                    <select name="sex" id="sex">
+                                        <option value="Nữ">Nữ</option>
+                                        <option value="Nam">Nam</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hPBD">
+                                <p class="birthDay">Ngày sinh</p>
+                                <img src="./img/Group 498.png" alt="">
+                                <input type="text" name="24/12/1999" value="24/12/1999" /> 
+                            </div>                           
+                          
+                            <div id="specialText">
+                                <p>Giới thiệu bản thân</p>
+                                <input type="text" /> 
+                            </div>
+                           
+                                                                           
+                        </div>
+                        <div class="buttonUpdate">
+                            <input type="button" name="Cập nhật" value="Cập nhật" /> 
+                        </div>
+                        
+                    </form>
+                </div>
+                
+            </div>
+  
+        </div> 
+    </main>    
+ 
+    <footer class="footerGuest1">
+        <hr>
+        <p>@2020  ST Home. Bản quyền thuộc về ST Home</p>
+    
+    </footer>
+    
+</body>
+</html>

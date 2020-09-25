@@ -1,6 +1,9 @@
 body{
     background: #F3F3F3;
 }
+.clear{
+    clear: both;
+}
 /* header */
 .HeaderPayment{
     height: 90px;
@@ -14,7 +17,16 @@ body{
     height: 100%;
     align-items: center;
 }
+.containerPayment{
+    padding: 0%;
+}
 /* inform1 */
+.colLeft{
+    width: 100%;
+}
+.colRight button{
+    display: none;
+}
 .header1{
 font-family: Roboto;
 font-weight: bold;
@@ -34,31 +46,20 @@ color: #666666;
 margin-top: 30px;
 margin-bottom: 0px;
 }
-.form1{
-width: 270px;
-height: 50px;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 8px;
-margin-top: 20px;
+.numberguest{
+    padding: 0;
 }
-.form-mot{
-font-family: Roboto;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
-color: #666666;
-padding: 15px 14px;
-margin-bottom: 0px;
-}
+
 .boxmain{
 display: inline-flex;
 flex-wrap: wrap;
 position: relative;
-width: 570px;
+justify-content: space-between;
+width: 100%;
+padding: 0;
 }
 .box-mot{
-width: 270px;
+width: 48%;
 height: 145px;
 background: #FFFFFF;
 box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
@@ -66,13 +67,17 @@ border-radius: 15px;
 margin-top: 30px;
 }
 .box-hai{
-width: 270px;
+width: 48%;
 height: 145px;
 background: #FFFFFF;
 box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
 border-radius: 15px;
 margin-top: 30px;
-margin-left: 30px;
+}
+.date1 input{
+    width: 100%;
+    border: none;
+    font-size: 1.1rem;
 }
 .underline1{
 width: 98px;
@@ -125,68 +130,43 @@ padding-top: 10px;
 color: #999999;;
 }
 /* inform2 */
-.form2{
-width: 570px;
-height: 50px;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 8px;
-margin-top: 20px;
+.inform2{
+    width: 100%;
+    padding: 0%;
 }
-.form3{
-display: inline-flex;
+.labelLeft{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    margin: 20px 0px 0px;
 }
-.noidung3{
-font-family: Roboto;
-font-weight: 500;
-font-size: 18px;
-line-height: 21px;
-color: #666666;
-margin-top: 30px;
-margin-bottom: 0px;
+.leftTextBox:focus{
+    outline: none ;
 }
+.leftTextBox {
+    width: 100%;
+    height: 50px;
+    display: block;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left:14px;
+    margin: 20px 0px 10px;
+}
+.Nation{
+    padding-left: 0px;
+}
+
 .right{
     margin-left:30px;
 }
-.noidung4{
-font-family: Roboto;
-font-weight: 500;
-font-size: 18px;
-line-height: 21px;
-color: #666666;
-margin-top: 30px;
-margin-bottom: 0px;
 
-}
-.form-bamot{
-width: 270px;
-height: 50px;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 8px;
-margin-top: 20px;
-}
-.form-bahai{
-width: 270px;
-height: 50px;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 8px;
-margin-top: 20px;
-}
-.formbon{
-width: 270px;
-height: 50px;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 8px;
-margin-top: 20px;
-}
 .header2{
-width: 220px;
+width: 50%;
 height: 42px;
 font-family: Roboto;
-font-style: normal;
 font-weight: bold;
 font-size: 18px;
 line-height: 21px;
@@ -200,23 +180,14 @@ float: left;
 float: left;
 font-family: Roboto;
 font-weight: bold;
-width: 224px;
+width: 100%;
 font-size: 28px;
 line-height: 33px;
 color: #333333;
 margin-top: 60px;
 margin-bottom: 0px;
 }
-.form5{
-    width: 570px;
-    height: 50px;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    border-radius: 8px;
-    margin-top: 20px;
-    clear: both;
-    }
-    
+ 
 .makhuyenmai{
     float: left;
 }
@@ -239,93 +210,103 @@ line-height: 23px;
 text-align: center;
 margin-top: 30px;
 }
-/* inform4*/
-.hinhtron{
-float: left;
-width: 20px;
-height: 20px;
-margin-left: 25px;
-margin-top: 30px;
-background: #C4C4C4;
-border-radius: 100px;
+.button1:focus{
+    outline: none;
 }
-.form6{
-width: 570px;
-height: 80px;
-margin-top: 30px;
-margin-bottom:0;
-background: #FFFFFF;
-border-radius: 10px;
-}
-.form-sau{
-float: left;
-font-family: Roboto;
-font-size: 18px;
-line-height: 21px;
-margin-left: 20px;
-margin-top: 30px;
-color: #666666;
-}
-.form6 > img{
-float: right;
-margin-top: 15px;
-margin-right: 25px;
+.promotioncode{
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 20px;
+    clear: both;
 }
 
+/* inform4*/
+.form-check{
+    width: 100%;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom:0;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-check-input{
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
+}
+.form-check-label{
+    font-family: Roboto;
+    font-size: 18px;
+    margin-left: 50px;
+    color: #666666;
+}
+.form-check > img{
+    margin-right: 25px;
+}
 /* chi tiết đặt phòng */
-.colRight > .bg{
-    width: 470px;
-    height: 602px;
+.bg{
+    width: 98%;
+    padding: 20px auto;
+    
     background: #FFFFFF;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     margin-top:30px;
+    position: sticky;
+    top: 10px;
     }
 .bg > img{
-float:right;
-padding-top:20px;
-padding-right: 20px;
+    float:right;
+    padding-top:20px;
+    padding-right: 20px;
+}
+.bg__header{
+    width: 98%;
+    margin: 20px auto;
 }
 .icon1{
-display: inline-flex;
-padding-top:20px;
-padding-left: 20px;
+    display: inline-flex;
+    padding-top:20px;
+    padding-left: 20px;
 }
 .content1{
-width: 178px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-color: #333333;
-padding-left: 10px;
+    width: 178px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    padding-left: 10px;
 }
 .ic{
-width: 30px;
-height: 30px;
+    width: 30px;
+    height: 30px;
 }
 hr{
-margin:auto;
-width: 430px;
-height: 0px;
-margin-top:20px;
+    margin:auto;
+    width: 95%;
+    height: 0px;
+    margin-top:20px;
 }
 .icon2{
-display: inline-flex;
-padding-top:20px;
-padding-left: 20px;
+    display: inline-flex;
+    padding-top:20px;
+    padding-left: 20px;
 }
 .content2{
-margin:0;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-color: #666666;
-padding-left: 10px;
-padding-top: 5px;
+    margin:0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 .icon3{
 width: 200px;
@@ -396,9 +377,9 @@ padding-left: 20px;
     clear: both;
 }
 .cs{
-margin:0;
+margin:0 auto;
+width: 95%;
 padding-top: 20px;
-padding-left: 20px;
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
@@ -407,20 +388,18 @@ line-height: 19px;
 color: #333333;
 }
 .content4{
-margin:0;
-width: 430px;
-height: 76px;
+margin:0 auto;
+width: 95%;
 font-family: Roboto;
 font-style: normal;
 font-size: 16px;
 line-height: 19px;
 color: #666666;
 padding-top: 20px;
-padding-left: 20px;
 }
 /* footer */
 .FooterPayment{
-width: 1440px;
+width: 100%;
 height: 70px;
 margin-top: 60px;
 background-color: white;
@@ -432,4 +411,15 @@ font-family: Roboto;
 font-size: 14px;
 line-height: 16px;
 color: #999999;
+}
+@media (max-width: 767px){
+    .colRight button{
+        display: block;
+    }
+    .inform4 button{
+        display: none;
+    }
+    .bg{
+        position: static;
+    }
 }

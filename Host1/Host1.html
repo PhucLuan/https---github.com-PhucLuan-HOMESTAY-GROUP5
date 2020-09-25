@@ -1,43 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleHost1.css" />
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styleHome.css" />
-  <link rel="stylesheet" href="" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./styleHost1.css" />
-  <title>Host1</title>
-</head>
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <title>Host_1</title>
+  </head>
 
-<body>
-  <header>
-    <div class="container containerHeader">
-      <div class="row rowOfheader">
-        <div class="col-lg-5 Logo">
-          <img class="LogoSTHome-Header" src="./img/logoSTpng1 1.png" width="250" height="58" alt="Logo" />
-          <div class="btn restplace">Chỗ nghỉ</div>
-          <div class="btn customer">Khách hàng</div>
-        </div>
-        <div class="host_inf col-lg-4 offset-lg-3">
-          <div class="create_new_property btn">
-            <p>Tạo chỗ nghỉ mới</p>
+  <body>
+    <header class="HeaderHost3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light nav__header">
+        <div class="container containerHeader">
+          <a class="navbar-brand" href="#"
+            ><img
+              class="img-fluid"
+              src="./img/logoSTpng1 1.png"
+              alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" href="#"
+                >Chỗ nghỉ <span class="sr-only">(current)</span></a
+              >
+              <a class="nav-link" href="#">Khách hàng</a>
+              <a class="nav-link colButton" href="#"
+                ><button>Tạo chỗ nghỉ mới</button></a
+              >
+              <a class="nav-link colAccount" href="#"
+                ><img
+                  class="img-fluid"
+                  src="./img/iconHost.png"
+                  alt=""
+              /></a>
+            </div>
           </div>
-          <div class="btn btnImgHost" style="margin-top: -8px"> <img class="img_host" src="./img/Mask GroupimgHosst.png"
-              alt="img.host" /></div>
         </div>
-      </div>
-    </div>
-  </header>
-  <div class="container containerMainBody">
-    <div class="row rowBody">
-      <div class="col-lg-4 create_acc">
-        <div class="settingaccForm1">
-          <div class="settingAcc"><strong>Cài đặt tài khoản</strong></div>
+      </nav>
+    </header>
 
+    <div class="container containerMainBody">
+      <div class="row rowBody">
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4 create_acc">
+          <!-- <div class="settingaccForm1"> -->
+          <div class="settingAcc"><strong>Cài đặt tài khoản</strong></div>
           <div class="fontSettingacc">
             <img src="./img/image 14.png" alt="" class="imgHost" />
+
             <div class="inforImg">
               <p class="nameAcc">Hoài Thương</p>
               <p class="emailAcc">hoaithuong@gmail.com</p>
@@ -48,78 +91,125 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-8 personalInfor">
-        <div class="ground">
-          <div class="formInfor">
+        <div class="col-12 col-sm-8 col-md-8 col-lg-8 personalInfor">
+          <!-- <div class="ground"> -->
+          <div class=" formInfor">
             <p class="headerInfor">Thông tin cá nhân</p>
             <hr />
-            <div class="formName">
+            <div class="col-12 col-sm-12 col-md-12 formName">
               <p class="nameInfor">Họ tên</p>
               <div class="fom1">
-                <form class="formTextname" action="#" method="POST" name="email">
-                  <input type="text" name="Email" placeholder="Nhập họ tên" style="border: hidden; width: 750px" />
+                <form
+                  class="formTextname"
+                  action="#"
+                  method="POST"
+                  name="email"
+                >
+                  <input
+                    type="text"
+                    name="Email"
+                    placeholder="Nhập họ tên"
+                    style="border: hidden;"
+                  />
                 </form>
               </div>
             </div>
-            <div class="formEmail">
+            <div class="col-12 col-sm-12 col-md-12 formEmail">
               <p class="emailInfor">Địa chỉ email</p>
               <div class="form2">
-                <form class="formTextemail" action="#" method="POST" name="email">
-                  <input type="text" name="Email" placeholder="Nhập email" style="border: hidden; width: 750px" />
+                <form
+                  class="formTextemail"
+                  action="#"
+                  method="POST"
+                  name="email"
+                >
+                  <input
+                    type="text"
+                    name="Email"
+                    placeholder="Nhập email"
+                    style="border: hidden;"
+                  />
                 </form>
               </div>
             </div>
-            <div class="form3">
-              <div class="left">
+            <div class="col-12 col-sm-12 col-md-12 form3">
+              <div class=" left">
                 <p class="phoneNumbers">Số điện thoại</p>
-                <div class="formLeft">
+                <form
+                class="formLeft"
+                    id="formPhone"
+                    action="#"
+                    method="POST"
+                    name="phoneNumber"
+                  >
                   <img class="iconPhone" src="./img/Group.png" />
-
-                  <form id="formPhone" action="#" method="POST" name="phoneNumber">
-                    <input type="text" name="SDT" placeholder="Nhập số điện thoại"
-                      style="border: hidden; margin-left: 4px; width: 330px" />
+                 
+                    <input
+                      type="text"
+                      name="SDT"
+                      placeholder="Nhập số điện thoại"
+                      style="border: hidden; margin-left:10%;"
+                    />
                   </form>
-                </div>
+              
               </div>
               <div class="right">
                 <p class="sex">Giới tính</p>
-                <form class="formRight" action="/cgi_bin/dropdow.cgi" method="POST">
+                <form
+                  class=" formRight"
+                  action="/cgi_bin/dropdow.cgi"
+                  method="POST"
+                >
                   <select name="dropdown" class="dropDown">
                     <option value="female">Nữ</option>
                     <option value="maile">Nam</option>
+                    <!-- <p class="formTextsex">Nữ</p> -->
                   </select>
                 </form>
               </div>
             </div>
-            <div class="birth">
+            <div class="col-12 col-sm-12 col-md-12 birth">
               <p class="dateOfbirth">Ngày sinh</p>
               <div class="formBirth">
                 <img class="iconBirth" src="./img/Group 498.png" />
                 <p class="formTextBirth">
-                  <input type="date" name="Bday" style="border: 0px" />
+                  <input class="dateBirthday" type="date" name="Bday" />
                 </p>
               </div>
             </div>
             <div class="formCmnd">
               <p class="cmnd">CMND</p>
               <form class="imgCMND">
-                <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput" />
+                <input
+                  type="file"
+                  capture="camera"
+                  accept="image/*"
+                  id="cameraInput"
+                  name="cameraInput"
+                />
+                <!-- <img src="../img/Group 542.png" alt="" class="postCMND" /> -->
               </form>
             </div>
           </div>
-        </div>
-        <hr />
-        <div class="btn saveSetting" type="button" name="btnSaveseting">
-          <p>Lưu cài đặt</p>
+          <!-- </div> -->
+          <hr />
+          <div class="btn saveSetting" type="button" name="btnSaveseting">
+            <p>Lưu cài đặt</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer class="footerHost1">
-    <p class="copyright">@2020 ST Home. Bản quyền thuộc về ST Home</p>
-  </footer>
-</body>
-
+    <footer class="footerHost1">
+      <p class="copyright">@2020 ST Home. Bản quyền thuộc về ST Home</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

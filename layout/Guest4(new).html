@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./Guest4(new).css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+      <!-- JS, Popper.js, and jQuery -->
+      <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <title>Guest 4</title>
+  </head>
+
+  <body>
+    <header class="headerGuest1">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light nav__header">
+          <div class="container containerHeader">
+              <a class="navbar-brand" href="#"><img class="img-fluid" src="./img/logoSTpng1 1.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                      <a class="nav-link" href="#">Đặt chỗ của tôi</a>
+                      <a class="nav-link" href="#">Cài đặt tài khoản</a>
+                      <div class="profile">
+                          <p class="contentId">TÀI KHOẢN CỦA TÔI</p>
+                          <p class="contentName">Hoài Thương</p>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </nav>
+  </header>
+    <div class="color">
+    <section class="contentHeadGuest4">
+      <div class="container contentHeader">
+        <div class="row rowHead">
+          <div class="col-lg-2 headingRest">
+            <p class="restPlace">3 chỗ nghỉ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section>
+        <div class="container contentMainGuest4">
+          <div class="row aboutUs rowMain">
+            <!-- <div class=""> -->
+              <div class="col-12 col-sm-8 col-md-7 col-lg-3 allRest">
+     
+              <form
+                  id="allrest"
+                  name="allRest"
+                  action="/cgi_bin/dropdow.cgi"
+                  method="POST"
+                  class="width1"
+                >
+                  <select required name="dropdown" class="cmbbAllrest">
+                    <option disabled value=" ">Tất cả chỗ nghỉ</option>
+                    <option value=" "></option>
+                    <option value=" "></option>
+                    <option value=" "></option>
+                  </select>
+                </form>
+              </div>
+              <div class="col-12 col-sm-8 col-md-7 col-lg-5 dayToday">
+                <div class="width1">
+                  <p class="inputDate">
+                    Từ ngày <input id="date" type="date" name="fistday" /> đến
+                    <input id="date" type="date" name="endday" />
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-8 col-md-7 col-lg-3 findID">
+                <form
+                  name="formSearchID"
+                  class="width1"
+                  id="formSearchID "
+                  method="POST "
+                >
+                  <div class="txtfindID">
+                    <input
+                      id="txtfindID"
+                      type="text "
+                      placeholder="Tìm kiếm ID chỗ nghỉ "
+                    /><img
+                      id="logoSearch"
+                      src="./img/LogoSearch.png "
+                    />
+                  </div>
+                </form>
+              </div>
+            <!-- </div> -->
+            <table class="table col-12 col-sm-12 col-md-12 col-lg-12 table-responsive tableInfor" style="padding-top: 10px">
+              <thead>
+                <tr>
+                  <th scope="col">ID Homestay</th>
+                  <th scope="col">Tên chỗ nghỉ</th>
+                  <th scope="col">Thời gian checkin</th>
+                  <th scope="col">Thời gian checkout</th>
+                  <th scope="col">Thành tiền</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th data-label="ID Homestay" scope="row">34567</th>
+                  <td data-label="Tên chỗ nghỉ">
+                    <img
+                      src="./img/img_Guest1.png"
+                      class="img-fluid img1"
+                      alt="Responsive image"
+                    />
+                    Nomad Home & Coffee
+                  </td>
+                  <td data-label="Thời gian check in">06/09/2020</td>
+                  <td data-label="Thời gian check out">08/09/2020</td>
+                  <td data-label="Thành tiền">1,611,586đ</td>
+                </tr>
+                <tr>
+                  <th data-label="ID Homestay" scope="row">19897</th>
+                  <td data-label="Tên chỗ nghỉ">
+                    <img
+                      src="./img/img_Guest4(2).png"
+                      class="img-fluid img1"
+                      alt="Responsive image"
+                    />
+                    Le Jardin homestay
+                  </td>
+                  <td data-label="Thời gian check in">01/08/2020</td>
+                  <td data-label="Thời gian check out">02/08/2020</td>
+                  <td data-label="Thành tiền">1,730,435đ</td>
+                </tr>
+                <tr>
+                  <th data-label="ID Homestay" scope="row">34781</th>
+                  <td data-label="Tên chỗ nghỉ">
+                    <img
+                      src="./img/img_Guest4(3).png"
+                      class="img-fluid img1"
+                      alt="Responsive image"
+                    />
+                    Oriana Villa Đà Lạt 104
+                  </td>
+                  <td data-label="Thời gian check in">12/06/2020</td>
+                  <td data-label="Thời gian check out">15/06/2020</td>
+                  <td data-label="Thành tiền">1,138,500đ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

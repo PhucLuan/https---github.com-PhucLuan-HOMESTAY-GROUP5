@@ -41,7 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
     breakpoints: {
       1024: {
         perView: 3,
-      }}
+      }},
+      breakpoints: {
+        768: {
+          gap:10,
+          perView: 3,
+        }}
   }).mount();
   new Glide(".glidePromote", {
     type: "carousel",

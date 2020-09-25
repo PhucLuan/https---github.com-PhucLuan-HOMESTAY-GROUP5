@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="adminpage.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="admin1.html">Host</a>
+    <a href="admin2.html">Doanh thu</a>
+    <a href="#">Hợp đồng</a>
+    <a href="admin3.html">Chiết khấu</a>
+    <a href="admin4.html">Nhân viên</a>
+  </div>
+  <div class="container containerHeader">
+    <header class="HeaderLogin">
+      
+      <div class="row rowHeader">
+          <div class="col-lg-1 col-md-1 col-sm-1 col-1">               
+              <div>
+                  <button class="openbtn" onclick="openNav()" >☰</button> 
+              </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-4 col-3"> 
+              
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-1 col-1 offset-lg-2 offset-md-2 offset-sm-2 offset-2"><div >
+              <img class="nofiticationIcon" src="img/Group 598.png" alt ="">
+          </div> </div> 
+          
+          <div class="col-lg-1 col-md-1 col-sm-1 col-1"> 
+              <div >
+                  <img class="headerIcon" src="img/image 13.png" alt ="">
+              </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-3 col-4"> 
+              <p>Xin chào</p>
+              <p><b>Trọng Nghĩa</b></p>
+          </div>          
+      </div>
+  </header>
+</div>
+
+    
+
+
+<div class="container">
+    <div class="revenueBox row">
+      <div class=" col-lg-4">
+        <p><b>Tổng doanh thu theo tháng</b></p>
+        <p class="revenueText">870Tr</p>
+      </div>
+      <div class="col-lg-4"><input type="month" input-value="2020-09" id="bdaymonth1" name="bdaymonth"></div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <p><b>Từ tháng</b><p>
+      <input type="month" input-value="2020-01" id="bdaymonth2" name="bdaymonth">
+    </div>
+    <div class="col-lg-4 offset-lg-2">
+      <p><b>Đến tháng</b><p>
+        <input type="month" input-value="2020-09" id="bdaymonth3" name="bdaymonth">
+    </div>
+  </div>
+  
+  <img  src="img/revenuepng.png" alt ="">
+</div>
+
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script>
+  document.getElementById("bdaymonth1").value = "2020-08";
+  document.getElementById("bdaymonth2").value = "2020-01";
+  document.getElementById("bdaymonth3").value = "2020-08";
+function openNav() {
+  document.getElementById("mySidebar").style.width = "305px";
+  document.getElementById("main").style.marginLeft = "305px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 

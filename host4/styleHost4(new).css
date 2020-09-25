@@ -1,0 +1,175 @@
+/* chỉnh cho cả bài */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+/* heaeder của bài 
+thanh navbar */
+header {
+  background: #f3f3f3;
+}
+.HeaderHost4 {
+  border-bottom: 1px solid #999999;
+}
+.containerHeader {
+  height: 100%;
+  padding: 0%;
+}
+.rowHeader {
+  height: 100%;
+  align-items: center;
+}
+.collapse.show {
+  display: flex;
+}
+.colLink a {
+  padding: 0 10px;
+  color: #333333;
+  text-decoration: none;
+}
+.colLink a:first-child {
+  color: #a45e4a;
+  font-weight: bold;
+  border-bottom: 4px solid #a45e4a;
+  padding-bottom: 32px;
+}
+.colButton button {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(90deg, #cb846f 0%, #a45e4a 100%);
+  border-radius: 6px;
+  color: white;
+  border: 1px solid white;
+}
+.colAccount {
+  padding: 0;
+}
+.navbar-nav {
+  width: 100%;
+  align-items: center;
+}
+.nav-link.colButton {
+  margin-left: auto;
+}
+
+/* end header */
+/* css body */
+.bodyHead {
+  padding-top: 60px;
+}
+/* chỉnh viền cho 2 form chọn ngày và tìm kiếm */
+.width1 {
+  height: 50px;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+}
+.inputDate{
+  width: 100%;
+  padding-top: 3%; 
+  font-size:medium;
+  padding-left: 2%;
+}
+/* ô nhập ngày tháng năm */
+.inputDate > input {
+  width: 35%;
+  border: hidden;
+  color: #999999;
+  background-color: white !important;
+
+}
+/* ô nhập tìm kiếm ID */
+.txtfindID {
+  padding-left: 5%;
+  padding-top: 3%;
+}
+#txtfindID {
+  width: 80%;
+  border: hidden;
+}
+/* logo tìm kiếm */
+#logoSearch {
+  padding-left: 5%;
+}
+.bodyMain {
+  padding-top: 60px;
+}
+/* chỉnh font chữ cho tên chỗ nghỉ và thành tiền */
+#lgFont {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+
+}
+/* responsive cho button trên header */
+@media only screen and (max-width: 992px) {
+  .nav-link.colButton {
+    margin-right: auto !important;
+    margin-left: 0;
+  }
+  .navbar-nav {
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 360px){
+  .width1{
+    width: 103%;
+  }
+}
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (min-width: 768px){
+  .dayToday{
+width: max-content;
+  }
+  .inputDate {
+    width: 102%;}
+} 
+@media only screen and (min-width: 992px){
+
+  .inputDate{
+    font-size: smaller;
+    width: 100%;
+  }
+}
+.table tbody tr:nth-child(even){
+  background-color: #fde9e0 ;
+}
+/* Responsive table*/
+@media screen and (max-width: 800px) {
+
+  table {
+    border: 0;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  .table, .table tbody, .table tr, .table td{
+    display: block;
+    width: 100%;
+  }
+  .table tr{
+    margin-bottom: 15px;
+  }
+  .table td{
+    text-align: right;
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+  }
+  .table td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}

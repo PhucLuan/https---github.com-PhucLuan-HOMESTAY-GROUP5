@@ -17,19 +17,18 @@ document.addEventListener("DOMContentLoaded", () => {
     type: "carousel",
     startAt: 0,
     animationTimingFunc: "ease-in-out",
-    gap: 100,
+    gap: 50,
     perView: 3,
     breakpoints: {
-      900: {
-        perView: 2,
-        gap: 10
-      }
-    },
-    breakpoints: {
+      992: {
+        gap: 50,
+        perView: 2
+      },
       414: {
-        perView: 1,
+        gap: 10,
+        perView: 2
       }
-    }
+    } 
   }).mount();
 });
 

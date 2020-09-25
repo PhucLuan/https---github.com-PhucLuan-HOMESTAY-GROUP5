@@ -1,0 +1,499 @@
+/* Style phần Header */
+
+.containerHeader{
+    height: 100%;
+    padding: 0% ; 
+}
+.rowHeader{
+    height: 100%;
+    align-items: center;
+}
+.profile{
+    margin-left: auto;
+}
+.collapse.show{
+    display: flex;
+}
+
+/* Thuộc tính Cài đặt tài khoản*/
+.navbar-nav a:nth-child(1){
+    margin-right: 21px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+}
+/* Hiệu ứng cho Cài đặt tài khoản*/
+.navbar-nav a:nth-child(1):hover, .navbar-nav a:nth-child(2):hover{
+    color: #A45E4A !important;
+    font-weight: bold;
+    border-bottom: 3px solid #A45E4A;
+    padding-bottom: 5px;
+}
+.contentId{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    margin-left: auto;
+    /* display: flex;
+    flex-wrap: wrap;
+    max-height: 35rem; */
+}
+.contentName{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #333333;
+    padding: 0;
+    /* display: flex;
+    flex-wrap: wrap;
+    max-height: 35rem;*/
+}
+.navbar-nav{
+    width: 100%;
+    align-items: center;
+}
+@media only screen and (max-width: 991px){
+    .navbar-nav{
+        width: auto;
+        align-items: center;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        display: block;
+    }
+    .maleFemale{
+        display: none;
+    }
+    .cardGuest1{
+        display: none;
+    }
+}
+/* @media only screen and (max-width:992px){
+    .contentId{
+        margin-right: auto !important;
+        margin-left: 0;
+    }
+    .navbar-nav a{
+        align-items: flex-start;
+    }
+} */
+.infoID{
+    padding-top: 22px;
+}
+/* Thuộc tính TÀI KHOẢN CỦA TÔI*/
+/* .profile > .contentId{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    padding-top: 30px;
+}
+/* Thuộc tính Hoài Thương*/
+/* .profile > .contentName{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #333333;
+    padding-bottom: 17px;
+    padding-top: 10px;
+} */
+/* Thuộc tính Đặt chỗ của tôi*/
+/* .nav-link_place{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    padding-left: 46px;
+} */
+
+/* Hiện TÀI KHOẢN CỦA TÔI & Hoài Thương sang phải*/
+/* .collapse.show{
+    display: flex;
+}
+
+.containerHeader{
+    height: 100%;
+    padding: 0px;
+} */ 
+
+/* .uLogo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.uLogo > .place{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+}
+.uLogo > .setting{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #A45E4A;
+    margin-right: 81px;
+}
+.rowHeader > .colId{
+    margin-left: 1035px;
+    margin-top: -126px;
+}
+
+.colId > .contentId{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    
+}
+.colId > .contentName{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #333333;
+    
+
+} */
+.contentGuest1{
+    background-color: #E5E5E5;
+    height: 190px;
+}
+.rowMain{
+    height: 100%;
+    align-items: center;
+}
+.rowMain > div{
+    padding: 0px;
+}
+
+.cardGuest1{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.cardGuest1 > .name{
+    margin-left: 30px;
+    
+}
+.name{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #A45E4A;
+}
+.info{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #333333;
+
+}
+.cardGuest1 > .info{
+    margin-left: 22px;
+}
+
+.rowMain > div{
+    padding: 0px;
+}
+.rightHost{
+    padding-top: -80px;
+    padding-left: 501px;
+}
+.buttonHost > input{
+    width: 270px;
+    height: 50px;
+    left: 1035px;
+    top: 227px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #A45E4A;
+      
+}
+
+.footerGuest1{
+    text-align: center;
+    background-color: #E5E5E5;
+    height:60px;
+ 
+}
+.footerGuest1 > p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    margin: 0%;
+    margin-top: 22px ;
+}
+.footerGuest1 > hr{
+    margin: 0%;
+}
+main{
+    background-color: #E5E5E5;
+    height: 1164px;
+}
+
+.rowAvt > div{
+    padding: 0px;
+}
+.colAvt > img{
+    margin-left: 370px;
+}
+.idCustomer{
+    color: #333333;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+}
+.buttonAvt > input{
+    
+    width: 175px;
+    height: 50px;
+    left: 660px;
+    top: 386px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF; 
+    background: linear-gradient(90deg, #C8816D 0%, #A45E4A 100%);
+    border-radius: 10px;
+   
+}
+.fullName > p{
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+
+}
+.fullName > input{
+    margin-bottom: 30px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 770px;
+    height: 50px;
+    left: 535px;
+    top: 512px;
+    background-color: #E5E5E5;
+
+}
+.phone > input {
+    width: 370px;
+    height: 50px;
+    left: 535px;
+    top: 754px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-color: #E5E5E5;
+    padding-left: 55px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+
+.colInfo{
+    
+    padding: 0px;
+}
+.buttonUpdate > input{
+    width: 200px;
+    height: 55px;
+    left: 535px;
+    top: 1196px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #CF8874 0%, #A45E4A 100%);
+    border-radius: 8px;
+}
+#specialText > input{
+    width: 100%;
+    height: 170px;
+    left: 535px;
+    top: 996px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-color: #E5E5E5;
+    flex-wrap: wrap;
+}
+#sex{
+    width: 370px;
+    height: 50px;
+    left: 935px;
+    top: 754px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #E5E5E5;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+   
+}
+.sexPhone{
+    display: flex;
+    justify-content: space-between;
+
+}
+.sexPhone > div{
+    padding: 0px;
+}
+
+.hPBD > input{
+    width: 370px;
+    height: 50px;
+    left: 535px;
+    top: 875px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 8px; 
+    background-color: #E5E5E5;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    margin-bottom: 30px;
+    padding-left: 55px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+}
+.fullName1 > p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+.fullName1 > input{
+    width: 100%;
+    height: 50px;
+    left: 535px;
+    top: 512px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    background-color: #E5E5E5;
+    margin-bottom: 30px;
+    padding-left: 21px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+  
+}
+.eMail > p{
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+
+}
+.eMail > input{
+    width: 100%;
+    height: 50px;
+    left: 535px;
+    top: 633px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    background-color: #E5E5E5;
+    margin-bottom: 30px;
+    padding-left: 21px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    
+}
+.phone > img{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.hPBD > img{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+/*Desktop first*/
+@media only screen and (max-width: 767px) {
+    .phone > input{
+        width: 100%;
+        margin-bottom: 1rem;
+      
+    }
+    .maleFemale > select{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+}
+  

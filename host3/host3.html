@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host 3</title>
+    <!-- BOOSTRAP  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="./css/host3.css">
+
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- TOGGLE  -->
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="HeaderHost3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav__header">
+            <div class="container containerHeader">
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="./img/logoSTpng1 1.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="#">Chỗ nghỉ <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Khách hàng</a>
+                        <a class="nav-link colButton" href="http://127.0.0.1:5501/Host2/host2.html"><button>Tạo chỗ nghỉ mới</button></a>
+                        <a class="nav-link colAccount" href="#"><img class="img-fluid" src="./img/Mask Group.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="contentHost3">
+        <div class="container contentHost">
+            <div class="row row__header">
+                <div class="col-lg-2 col__header">
+                    <h3>2 Chỗ nghỉ</h3>
+                </div>
+            </div>
+            <div class="row row__search">
+                <div class="col-5 col-sm-4 col-md-3 col-lg-3 col__dropdown">
+                    <select class="form-control form_home">
+                        <option>Tất cả chỗ nghỉ</option>
+                    </select>
+                </div>
+                <div class="col-6 col-sm-5 col-md-4 col-lg-3 col__search">
+                    <form name="formSearchID" class="width1" id="formSearchID " method="POST ">
+                        <div class="txtfindID">
+                            <input id="txtfindID" type="text" placeholder="Tìm kiếm tên chỗ nghỉ" />
+                            <img class="logoSearch" src="./img/Group.png" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row row__table">
+                <div class="col-lg-12 col__table">
+                    
+                        <table class="table col-lg-12 tableInfor table-responsive-lg table-responsive-lg "
+                            style="padding-top: 10px">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Hình ảnh</th>
+                                    <th scope="col">Tên chỗ nghỉ</th>
+                                    <th scope="col">Địa chỉ</th>
+                                    <th scope="col">Ẩn/Hiện</th>
+                                    <th scope="col">Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th data-label="ID" scope="row">32982</th>
+                                    <td data-label="Hình ảnh"><img src="./img/room_32982_47_1570526737 1.png" alt=""></td>
+                                    <td data-label="Tên chỗ nghỉ">Meo Homestay Phố cổ - Mun's room</td>
+                                    <td data-label="Địa chỉ">123 XXX, Hoàn Kiếm, Hà Nội</td>
+                                    <td data-label="Ẩn/hiện" id="lgFont"><input type="checkbox" checked data-toggle="toggle"
+                                            data-onstyle="outline-success" data-offstyle="outline-danger"></td>
+                                    <td data-label="Hành động"><button>Edit</button></td>
+                                </tr>
+                                <tr>
+                                    <th data-label="ID" scope="row">32983</th>
+                                    <td data-label="Hình ảnh"><img src="./img/1234.png" alt=""></td>
+                                    <td data-label="Tên chỗ nghỉ">Meo Homestay Phố cổ - Indochina's room</td>
+                                    <td data-label="Địa chỉ">123 XXX, Hoàn Kiếm, Hà Nội</td>
+                                    <td data-label="Ẩn/hiện" id="lgFont"><input type="checkbox" checked data-toggle="toggle"
+                                            data-onstyle="outline-success" data-offstyle="outline-danger"></td>
+                                    <td data-label="Hành động"><button>Edit</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="FooterHost3"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- TOGGLE  -->
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+</body>
+
+</html>
